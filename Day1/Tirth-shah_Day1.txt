@@ -1,11 +1,42 @@
 Git
 
-Rich client program
-  Rich client programs are those programs that require more high end hardware and utilises all of the available hardware to execute.
+Theory:
+  Rich client program
+    Rich client programs are those programs that require more high end hardware and utilises all of the available hardware to execute.
 
-Thin client program  
-  Thin client program are those program that do not require much of a hardware to execute.
+  Thin client program  
+    Thin client program are those program that do not require much of a hardware to execute.
 
-Version control 
+  Version control
+    Version control basically means that the history of the changes in program is maintained. And if we want to get back to the previous version of the software       then we can co back easily.
 
-Need of git hub
+  Need of git hub
+    If the program is stored on anyones local machine and due to any problem the system gets corrupted of any other faliure occurs then the data is lost, and so we use git.
+
+Commands:
+1) git init :
+	- This command initializes empty git repository.
+	- '.git' a hidden folder is created in the local folder.
+
+
+2) git add <filename> :
+	- mentioned file is staged by this command.
+
+   git add .  :
+	- All newly created files and all updated files are staged.
+
+
+3) git commit -m "<commit message>" :
+	- It commits all changes done in the repository.
+
+
+4) git show :
+	- It displays the commit where "head" is currently pointing.
+
+
+5) git log :
+	- It displays previous commits.
+
+
+6) git status:
+	- It gives current status of the repository.
