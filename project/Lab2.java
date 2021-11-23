@@ -14,7 +14,7 @@ public class Lab2{
 			for(int j =0; j< 30000;j++){
 				list.add("str" + j);
 			}
-			Thread.sleep(100);
+			Thread.sleep(200);
 		}
 	
 	}
