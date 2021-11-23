@@ -15,7 +15,7 @@ public class Lab5 {
 	*/
 
 //		list.forEach(x->System.out.println(x));
-		list.forEach(System.out::println);
+		list.forEach(System.out:println);
 		
 		/*	for (int i = 0; i<list.size();i++){
 			System.out.println(list.get(i));
