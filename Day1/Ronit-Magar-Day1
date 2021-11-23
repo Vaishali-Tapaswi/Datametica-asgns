@@ -1,0 +1,39 @@
+                                  GIT DAY -1
+
+1)Types of Client applications:
+a)Rich Client : Installed in local system
+                Utitlises RAM/CPU of own machine
+b)Thin Client : Works generally on browser with good network connectivity
+
+c)Rich Internet Application : A thin Client application with, with 
+                              continuous server connection
+
+2)Repository : Central location for which keeps track of everything
+
+3)Git : Distributed Version control system  
+        Git is locally enabled as well 
+        parallel work on same project can be done
+       
+
+4) Git commands : 
+
+   a)<git init> : used for creating new or empty the repository
+
+   b)<git add ./git add fname> : used to stage newly created or 
+     updated files
+
+   c) <git commit -m message> : used to add staged files to 
+      the repository
+
+   d)<git show> : It displays the commit where head is pointed
+
+   e)<git log> : It displays previous commits history
+
+   f)<git status> :gives current status of the repository 
+
+4)Version Control : while developing a collaborative project 
+                    which contains many files and developers, 
+                    inorder to keep track of new and previous 
+                    developments,versions the idea of version 
+                    control comes into picture.
+5) 
