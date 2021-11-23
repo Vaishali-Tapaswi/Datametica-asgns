@@ -1,9 +1,0 @@
-Git
-Rich client 
-
-Thin client 
-
-Version control 
-
-Need of git hub
-
