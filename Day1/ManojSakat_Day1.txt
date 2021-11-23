@@ -1,9 +1,12 @@
-What is Git?
-Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.
+What is Git?--------->
+-Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of  what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier,  allowing changes by multiple people to all be merged into one source.
 
+Version control---->
+-Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.
 Local Repository-Git local repository is the one on which we will make local changes, typically this local repository is on our computer.
 
-Git Repository-Git remote repository is the one of the server, typically a machine situated at 42 miles away.
+Git Repository---->
+-Git remote repository is the one of the server, typically a machine situated at 42 miles away.
 
 Git Commands-
 1) git init :
