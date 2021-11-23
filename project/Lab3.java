@@ -10,7 +10,7 @@ public class Lab3 {
 		System.out.println("This is a start of main...");
 		Runnable verysimple = ()-> 	  {
 						System.out.println("in run of Very Simple");
-						try { 			Thread.sleep(3000); 		} catch (InterruptedException e) { 	e.printStackTrace(); 			}
+						try { 			Thread.sleep(300); 		} catch (InterruptedException e) { 	e.printStackTrace(); 			}
 				};
 		Thread t1 = new Thread(verysimple);
 		t1.start();
