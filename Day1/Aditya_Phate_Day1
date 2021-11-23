@@ -1,0 +1,31 @@
+GIT DAY1
+
+THEORY:-
+	--->Git is distributed Version Control System.Some may call it as Soure Control System.
+	      It is fast and modern implementation of version control
+	--->History Tracking.
+	--->Version Control is a system that records changes to a file or set of files and managing multiple versions of your software.
+	--->You can have different colaborators for your project.
+	--->We can go back to older versions of our projects.
+
+COMMANDS:-
+	--->GIT INIT
+		->Initialize empty repository or reinitialize existing repository.(git init Project_Name   ->cd Project_Name)
+		->Creates .git folder which maintains the configuration.This .git folder stays hidden.
+	
+	--->GIT ADD<FILE_NAME>
+		->Adds the specified file to staging area.
+		->Once you add file to staging area,GIT starts tracking the changes happening in the file.
+		
+	--->GIT COMMIT -M<MESSAGE>
+		->Commits the file staging in area.
+		->Message is used as comment forthat commit.
+
+	--->GIT SHOW
+		->Used to display all the last commit where HEAD is pointing.
+
+	--->GIT LOG
+		->Used to display all previous commits.
+
+	--->GIT STATUS
+		->Shows the status of current directory where all the files where tracked,modified or deleted. 
