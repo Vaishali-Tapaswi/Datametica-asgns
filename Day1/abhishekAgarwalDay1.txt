@@ -1,0 +1,65 @@
+Git Global Information Tracking
+
+Rich Clients (Applications)
+-> Expects installed Systems/ RAM/ CPU
+
+Thin Clients (Web Apps)
+-> Expects only Browser/ Network ------------> Web server
+
+Rich Internet Applications(RIA)
+-> Combination of both Rich Clients and Thin Clients
+
+Git version control
+-> It always stores the latest file and this is only visible to the user
+
+GIT
+-> is Distributed version control, helps managing multiple repositories
+
+Version Control (Source Control)
+->Manages the multiple versions of the documents, web sites, programs which is almost used by all projects
+
+eg CVS, subversion, Mercurial and git 
+
+CVS and subversion use a central repo where the users have to check out files make changes in it accordingly then again check them in till then the other user can't access the data and this is the reason most of the version control systems are not CVS, subversion
+
+Mercurial and Git uses the distributed approach which treats all repo as equal and the is no central repo. Though it has master branch but anyone can fork it, branch it and make changes and commit and push it, later the unique system of merge is done where the most appropriate code is added to the main code and system is integrated accordingly.
+
+To make Local Repo
+
+-> mkdir folder_name
+-> cd folder_name
+-> create file_name  ()
+-> modify file_name
+-> git init ------------------this would create .git folder to check details type ls -a cmd in terminal to find hidden folders
+
+
+To modify local Repo and add file to git
+-> git add file_name-----------adds a change in file which is to be added in working dir to the staging area
+-> git commit -m "Message" ----to Finally make changes in the repo
+
+To get the status of files
+-> git show ---displays the info about head pointer of the repo eg. blobs, trees, tags, commits
+-> git log ----displays the info about all commit status of the branches available
+-> git status--displays the info of the working dir and the staging area
+
+Git Version Control
+-> Fast
+-> Provides a history of content changes
+-> facilitates collaborative changes to files
+-> easy to use
+
+What is git
+-> distributed so that connectivity doesn't block work
+-> easy to learn
+-> team centric hence collaboration happens naturally
+-> Able to staisfy the scripting needs of the advanced developers
+
+Quick Wins
+-> Focuses on content
+-> Opt in mechanism
+-> Open hence anyone can contribute
+-> distributed
+-> conversational platform
+-> Focuses on people
+-> Journal type editing
+-> Anywhere hence commit can be done offline
