@@ -1,0 +1,128 @@
+date: 23/11/2021
+learnings:
+Types of clients:
+Rich Client: where applications run on system, having all the processing power,ram,cpu etc
+Thin Client(Servlet/Jsp) these connect through browsers and network connectivity
+
+web applications are rich internet applications which have dedicated web servers somewhere remote and application running in browsers.
+
+Central repository: place where main data of company or organization resides
+
+git is distributed version control system, it has dedicated git server software that helps to access control,display contents of git repository via web and help managing multiple repository
+
+some other vcs:  CVS,Subversion they use a central repository, user "check out" files, work on them and later "check in" those
+
+distributed systems like mercurial and git are newer and gradually replacing centralized system. these treat all the repositories as same
+
+create new local repo:
+git init
+
+add file contents to the index or workspace
+git add filename
+git add .
+. indicates current directory
+.. indicates parent directory
+
+git log : shows total/ full log of all the committed transactions
+
+git show: shows the last commit from the branch where the head points to
+
+git status: shows tracked/untracked or staged/unstaged files present in that working file to be brought into workspace
+
+git commit -m message : commit the changes made to local git repos
+git commit -m "string message" : another way to commit
+
+
+Git video Review and my understandings---------------------------------------------------------
+
+
+what is version control ?
+saving a thing again and again is where version control helps you providing you time,
+person who did it and what contents of change were, tureopen for review for anytime in future
+version control is used for :
+1) history tracking - what original contents of file were and what changes were made and when were they made , by whom were they made 
+used in cases of :
+document creation date
+spelling correction
+grammar fix
+color change of website or website logo
+feature description
+2)collaboration: u and ur team doing some things, editing some things on same files
+used for collaborative history tracking as multiple people are editing the repository
+it allows simultaneous changes in repository to be done and reviewed
+
+what is git?
+git is distributed, so that connectivity doesn't block work
+easy to learn,its commands are easy to understand and implement
+Git is a fast and modern implementation of version control
+git provides a history of content changes
+git facilitates collaborative changes to files
+git is easy to use for any type of knowledge seeker: it equally serves programmers, designers and document authors
+GUI provides very pleasant experience with git, and ease of usage with buttons and simple ui
+Git is team centric
+
+idealogy of git: reality is that people are working at different times but with slight overlaps
+each taking a personal copy of files as they see them at a point in time , performing their own enhancements to them and then bringing them back to the central copy and wanting to merge
+those changes with the primary copy of documents,the images and the source code
+this overlapping of time and almost parallel work that complicates, give rise to version control
+
+git is customizable: flexible so that it fits your need instead of the other way
+git is powerful to satisfy the scripting needs of the advanced developers
+piece by piece adding little segments of a document and the committing of some selected work and then historical graphical representation that can even from cmd
+(git log --graph --decorate --abbrev-commit --all --pretty=online)
+how to setup git in local computer?
+1)git init <project_name> // this will initialize either empty git repository/file or reinitialize some existing repository
+
+how to stage all the changed,created or modified documents from local repository to workspace?
+using git add .
+or git add <filename.extension>
+// here any change made to file will be detected and treated as separate version of that file
+
+how to commit the changes made in the file?
+git commit -m "commit message"
+// here there can be other shortcuts associated with the message
+// plain commit would be like git commit
+once file gets committed to from workspace to the git local repository, it can be further tracked using head pointer which default points at master branch
+// commit is keyword which permanently records a historical snapshot of the files as they exist at given point of time
+
+git can be downloaded for any operating system , it has mature installers,package managers
+,distributions and source files, that download can be acquired from http://git-scm.com/downloads
+we need to configure user name and email address, these are not used as credentials on any of git hosting sites, but simply local records to give u credit for the work that u do in vcs
+config can be done using:
+git config --global user.name "<userame"
+git config --global user.email "<usermail id>"
+
+
+Git's Quick wins:
+git is focused on content and not files
+git's idea of staging area that u elect , opt in and not opt-out
+rather than accidently committing things that we didn't want to, we stage it in intermediate workspace and ask if u want to commit
+git is open and not locked
+idea is to allow people to make contribution to the project and then control and review type of process in which to bring those in.
+git is distributed and not centralized : git is efficient with its network transfers,so large quanties can be changed
+inside git, exchanges of code become conversations
+make git the smallest , lightest and most backgroundd piece of work and focus on what the objective is.
+it is journal and not backup
+it is journal of changes trying to make to the source code, rather than one big change at the end of day
+git works entirely offline: commits,branches,merges,re-bases, resetting history,even searching through those history events
+
+Git book understandings from chapter 1---------------------------------------------------------
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. 
+It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when
+
+local computer can checkout to different version databases
+
+RCS works by keepig patch sets( differences between files) in a special format on disk.
+
+need for collaboration gave rise to centralized version control systems like CVS,Subversion and Perforce single server that contains all the versioned files, and a number of clients that check out files from that central place.
+
+single point of failure was serious problem
+
+Distributed Version Control Systems like Git,Mercurial,Bazaar or Darcs, they fully mirror the repository,including its history.hus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
+
+
+
+
+
+
+
