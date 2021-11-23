@@ -1,0 +1,35 @@
+What is Git?
+Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.
+
+Local Repository-Git local repository is the one on which we will make local changes, typically this local repository is on our computer.
+
+Git Repository-Git remote repository is the one of the server, typically a machine situated at 42 miles away.
+
+Git Commands-
+1) git init :
+	- This command initializes empty git repository.
+	- '.git' folder is created in the local folder (which is hidden).
+
+
+2) git add <filename> :
+	- mentioned file is staged by this command.
+
+   git add .  :
+	- All newly created files and all updated files are staged.
+
+
+3) git commit -m "<commit message>" :
+	- It commits all changes done in the repository.
+
+
+4) git show :
+	- It displays the commit where "head" is currently pointing.
+
+
+5) git log :
+	- It displays previous commits.
+
+
+6) git status:
+	- It gives current status of the repository.
+
