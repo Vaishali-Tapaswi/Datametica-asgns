@@ -1,0 +1,46 @@
+GIT day-1 
+
+Theory ->
+
+        --- Git is open source distributed version control System.
+
+Types of Clients:-
+		1]Rich Client.
+		2]Thin Client.
+
+
+A) Version Control -
+
+      --- Version control is also known as source control or revision control.
+      --- Version control can records changes to a file over time, so we can recall specific versions later. 
+      --- Version control software keeps track of every modification to the code.
+      --- You can have different collaborators for your project.
+      ---  Allows multiple users to work on a project simultaneously.
+      --- It doesn’t overwrite the changes of other’s.
+      --- Maintains a history of every change.
+  
+B) Git Commands -
+     1->  GIT INIT 
+            --> Create .git folder which maintaince the configuration .This .git folder is hidden.
+            --> This command is used to create a repository in your local system or used to reinitialize existing repo.
+
+
+     2->  GIT ADD <FILENAME> 
+            -->This command is used to add a file to the Staging area.
+            --> Once you add file to staging area, git starts tracking the changes happening in the file
+
+     3->  GIT COMMIT -M <Message>
+            --> Commit is used for saving changes. 
+            --> After adding files to the staging area using git add, we can commit those changes.
+            
+     4->  GIT STATUS 
+            --> This command is used to shows the status of current directory.
+            --> It list all the files that you've changed that still need to be added or commited.
+
+     5->  GIT SHOW
+           -->It is Used to display last commint where HEAD is pointing.
+
+     6->  GIT LOG 
+            --> This command is used to display all previous commits. 
+
+     
