@@ -1,0 +1,35 @@
+Git:
+
+Day 1:
+	- Git is a distributed Version Control System.
+	- Version Control Or System Control is all about managing multiple version of document,program, web sote etc.
+	- git is Team-Centric because of this collaboration happens naturally.
+
+	Types of Clients:-
+		1]Rich Client.
+		2]Thin Client.
+
+	Git Commands:
+		1] Git Version:(git version)
+			Its shows the current version of Git available in your device.
+
+		2] git init: It use to initiolize the local repository.
+
+		3] git add <filename>:
+			 Mention file is staged by this command.
+
+		   git add . :
+			All newly created file and updated files are staged.
+
+		4]git commit -m "<commit message>":
+			It commit all changes done in repository.
+
+		5]git status:
+			It gives the current status of the repository.
+
+		6]git show:
+			Its shows information about  previously commit where "head" is pointing.
+
+
+		7]git log: 
+			Its shows information about all previously commit. 		   
