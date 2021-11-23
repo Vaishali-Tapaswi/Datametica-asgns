@@ -1,54 +1,54 @@
 Git day 1:
 
 --->Rich Clients:
-		-->Installed on own system - RAM/CPU
+	-->Installed on own system - RAM/CPU
 
 --->Thin Clients:
-		--> Browser + Network Connectivity
-		--> Web Server
+	--> Browser + Network Connectivity
+	--> Web Server
 
 --->Version Control :
-		--> Managing multiple versions of a document
+	--> Managing multiple versions of a document
  
 --->You can have various collaboraters for a project
       
 --->Cloning:
-		-->Creating a copy of the repository
+	-->Creating a copy of the repository
  
 --->Commands:
-		-->git init: 
-				->Initializes the local git repository
-				->Creates .git folder which maintains the configuration
-				->.git folder remains hidden
+	-->git init: 
+		->Initializes the local git repository
+		->Creates .git folder which maintains the configuration
+		->.git folder remains hidden
 			
-		-->git --version :
-				->prints the git version installed
+	-->git --version :
+		->prints the git version installed
 			
-		-->git add {< '.' - adds all the files in current directory>, <file_name>}: 
-				->Adds the specified file to staging area
-				->Once added git starts tracking the file for any changes
+	-->git add {< '.' - adds all the files in current directory>, <file_name>}: 
+		->Adds the specified file to staging area
+		->Once added git starts tracking the file for any changes
 				
-		-->git commit -m "<message>"
-				->commits the changes to your local repository
+	-->git commit -m "<message>"
+		->commits the changes to your local repository
 			
-		-->git show: 
-				->Used to display the last commit where the head is pointing to.
+	-->git show: 
+		->Used to display the last commit where the head is pointing to.
 			
-		-->git log: 
-				->Used to display all the previous commits
+	-->git log: 
+		->Used to display all the previous commits
 			
-		-->git status:
-				->Gives the current status of the repository
+	-->git status:
+		->Gives the current status of the repository
 			
 Git Basics Episode 1:
 
 --->Version Control:
-		-->Saving things again and again is where Version Control helps.
-		-->Provides Clearity as to when, why and how a person made changes to the code.
-		-->Keeps tracks on the history of changes
-		-->Collaboration: Git facilitates collaborative changes to a file
-		-->Git is a fast and modern implemention of version control
-		-->Approchable for any type of knowledge worker 
+	-->Saving things again and again is where Version Control helps.
+	-->Provides Clearity as to when, why and how a person made changes to the code.
+	-->Keeps tracks on the history of changes
+	-->Collaboration: Git facilitates collaborative changes to a file
+	-->Git is a fast and modern implemention of version control
+	-->Approchable for any type of knowledge worker 
 		
 Git Basics Episode 2
 
@@ -57,37 +57,37 @@ Git Basics Episode 2
 --->Git allows collaborative work
 --->Git allows one to create a copy of the existing project and make changes to it and merge the changes with the original one.
 --->Git Commands for VC:
-		-->git commit -m "<message>"
-		-->git push
-		-->git pull
-		-->git merge
+	-->git commit -m "<message>"
+	-->git push
+	-->git pull
+	-->git merge
 
 Git Basics Episode 3
 
 --->http://git-scm.com/downloads
 --->Configurating: 
-		-->$git config --global user.name "<name>"
-		-->Lets you configure your profile
+	-->$git config --global user.name "<name>"
+	-->Lets you configure your profile
 --->Initialization:
-		-->git init project1
-		-->create file1.txt
+	-->git init project1
+	-->create file1.txt
 --->Adding the file to staging area and commiting the changes
-		-->git add file1.txt
-		-->git commit -m "<message>"
+	-->git add file1.txt
+	-->git commit -m "<message>"
 
 Git Basics Episode 4
 
 Focuses on:
 --->Opt in, not out:
-		-->you elect which files to keep in the next staging area, rather than accidentely commiting.
+	-->you elect which files to keep in the next staging area, rather than accidentely commiting.
 --->Open, not locked:
-		-->Offers contribution to projects
-		-->In short open source projects
+	-->Offers contribution to projects
+	-->In short open source projects
 --->Distributed, not centralized
-		-->very simple to send large amount of content accross contents
+	-->very simple to send large amount of content accross contents
 --->Concersations, not cutoffs
 --->People, not tools
 --->Journal, not backup:
-		-->version control allows keeping history in an organized way
+	-->version control allows keeping history in an organized way
 --->Anywhere, not just online
 		
