@@ -1,0 +1,119 @@
+23/11 training
+
+DEVELOPMENT OF APPLICATION :
+      1.Rich Clients :- 
+      Developed in Application --> Main
+      It expects an installed System/Application i.e. Word, Excel etc.
+      The application from which the client can work on RAM/CPU.
+      2.Thin Clients :-
+      Developed in Servlet/JSP ---> Web Server.
+      The entire work is done on Web Server
+      It expects Browser + Network Connectivity.
+      3.Rich Internet Application :-
+      Technically it ois a thin client
+    
+      
+If we write a code on Local machine and if the harddisk get crash then the whole project will get corrupted.
+To avoid these things use Central Repository.
+In Central Repository the main commands used are : Push/Pull  &  Commit.
+
+Git is a Version Cotrol System.
+Git can be used as a server out of a box.
+It uses a Dedicated Git Server Software.
+
+Let's have a look on Version Control System :
+      I is all about managing multiple versions of documents, programs, web sites, etc.
+      Almost all "real" projects use some kind of version control.
+      Essential for team projects, but also very useful for individual projects.
+      Well known version control systems are :- CUS, Subversion, Mercurial(distributed system) & Git.
+      
+Central Repository : 
+      It uses commands like 1)Checkout & 2)Checkin
+      
+Distributed Repository VCS(Unit):
+      It don't use ckeckout command
+      It uses commands like 1)clone & 2)pull
+      Our local repository is a complete copy of everything on a remote server.
+      
+      
+Commands on Git :
+      1) git --version :- check the version of git we are using
+      2) git init :- initialize
+      3) git add filename.txt :- link the files on git which were added externally.
+      4) git status :- gives the status that what the changes are done to the repository & what is committed.
+      5) git commit -m "Message" :- write a message on the file. 
+      6) git show :- shows the changes and display the same message on the console.
+      7) git commit :- used to commit the repository.
+      
+      
+      
+Specific Notes from Book :
+
+Getting Started - About Version Control
+      It is a very wise thing to use. 
+      It allows you to revert selected files back to a previous state, 
+      revert the entire project back to a previous state, 
+      compare changes over time, 
+      see who last modified something that might be causing a problem, 
+      who introduced an issue and when, and more.
+      Using a VCS also generally means that if you screw things up or lose files, you can easily recover. 
+      In addition, you get all this for very little overhead.
+      
+There are 3 types of Version Control Systems :
+1) Local Version Control Systems
+2) Centralized Version Control Systems
+3) Distributed Version Control Systems
+
+1) Local Version Control Systems :
+      Programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control.
+2) Centralized Version Control Systems :
+      Systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, 
+      and a number of clients that check out files from that central place.
+      Advantantages : Administrators have fine-grained control over who can do what, 
+      and it’s far easier to administer a CVCS than it is to deal with local databases on every client.
+      Downsides : whenever you have the entire history of the project in a single place, you risk losing everything.
+3) Distributed Version Control Systems :
+       In a DVCS -
+       clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. 
+       Thus, if any server dies, and these systems were collaborating via that server,
+       any of the client repositories can be copied back up to the server to restore it.
+       Every clone is really a full backup of all the data.
+           
+      
+Getting Started - What is Git?
+1) Snapshots, Not Differences :
+      Git thinks of its data more like a series of snapshots of a miniature filesystem. 
+      With Git, every time you commit, or save the state of your project.
+      Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
+      Git thinks about its data more like a stream of snapshots.
+2) Nearly Every Operation Is Local :
+      Most operations in Git need only local files and resources to operate — generally no information is needed from another computer on your network. 
+       Git doesn’t need to go out to the server to get the history and display it for you — it simply reads it directly from your local database. 
+       you cant do work if you’re offline or off VPN.
+3) Git Has Integrity :
+      Everything in Git is checksummed before it is stored and is then referred to by that checksum.
+       You can’t lose information in transit or get file corruption without Git being able to detect it.
+       The mechanism that Git uses for this checksumming is called a SHA-1 hash.
+4) Git Generally Only Adds Data :
+      When you do actions in Git, nearly all of them only add data to the Git database.
+      It is hard to get the system to do anything that is not undoable or to make it erase data in any way.
+5) The Three States :
+      1. modified : Modified means that you have changed the file but have not committed it to your database yet.
+      2. staged : Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+      3. committed: Committed means that the data is safely stored in your local database.
+
+
+Getting Started - The Command Line 
+       The command line is the only place you can run all Git commands 
+       
+Getting Started - Getting Help
+      git help config
+      git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+
+ 
+      
+       
+
+      
