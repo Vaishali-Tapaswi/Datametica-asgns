@@ -1,0 +1,40 @@
+
+-----> Git Day 1:
+
+- Git is distributed version control system.
+- Version control is all about managing multiple versions of documents, programming websites , etc.
+- Git provides a history of content changes.
+- Git facilitates collaborative changes to files.
+- git is "team-centric" because of this collaboration happens naturally.
+
+
+
+-----> Git commands :
+1) git init :
+	- This command initializes empty git repository.
+	- '.git' folder is created in the local folder (which is hidden).
+
+
+2) git add <filename> :
+	- mentioned file is staged by this command.
+
+   git add .  :
+	- All newly created files and all updated files are staged.
+
+
+3) git commit -m "<commit message>" :
+	- It commits all changes done in the repository.
+
+
+4) git show :
+	- It displays the commit where "head" is currently pointing.
+
+
+5) git log :
+	- It displays previous commits.
+
+
+6) git status:
+	- It gives current status of the repository.
+
+
