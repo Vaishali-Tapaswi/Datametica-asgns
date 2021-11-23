@@ -7,7 +7,8 @@ public class Lab2 {
 		System.out.println("Enter a number to continue..");
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextInt();
-		
+				System.out.println("*****************************");
+
 		System.out.println("For loop initiated");
 		for(int i =0; i< 30000;i++){
 			List<String> list = new ArrayList<>();
