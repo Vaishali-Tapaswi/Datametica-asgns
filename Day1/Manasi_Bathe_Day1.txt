@@ -1,0 +1,36 @@
+What is a Version control?
+     Version control is a system that records changes to a file or set of files 
+    History tracking of content changes
+    Collaboration (when two or more users are working on same file.)
+    Git is a fast and modern implementation of version control.
+
+What is Git?
+       local Git - distributed so that connectivty doesn't block work
+
+Developer Dana
+    git init projectname   (intialize project)
+    cd projectname (creates database for the project)
+    git add      (adds the files in project)
+    git commit -m "Write message here"  (imports the code)
+
+Distributed Git 
+      Team centric
+      
+Doug = adds graphical work to the project and brings to the central server based copy
+Dana = adds code to the project and brings to the central server based copy
+
+these can be merged using doug.$ git merge danafeature
+
+Advanced Git 
+customizable git - flexible, powerful
+
+commands 
+    init = creates an empty repository
+git add filename = adds file of the project
+git status = shows modification status of the file
+git show = shows modification and author of modification
+git commit = saves changes in the file
+
+
+
+    
