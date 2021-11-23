@@ -1,0 +1,38 @@
+Lab-3:
+  
+  Rich Clients :-
+- Is installed on our own System (Application -> main).
+		Thin Clients :-
+- Is just Browser + Network Connectivity ie. Web Server.
+		Rich Internet Applications:
+- Web Applications which have dedicated web servers somewhere remote and application running in browsers
+
+		Git:
+- Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+- Version control means managing multiple versions.
+- Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to.
+- Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.
+
+		Git Commands:
+		
+1) git init :
+	- Used to initialize empty git repository.
+	- '.git' folder is created in the local folder.
+
+2) a. git add <filename> :
+	- Mentioned file is staged by this command.
+
+   b. git add .  :
+	- All newly created files and all updated files are staged.
+
+3) git commit -m "<commit message>" :
+	- Commits all changes done in the repository.
+
+4) git show :
+	- Displays the commit where "head" is currently pointing.
+
+5) git log :
+	- Displays previous commits.
+
+6) git status:
+	- Gives current status of the repository.
