@@ -1,0 +1,39 @@
+
+
+GIT DAY 1
+
+THEORY
+	
+	➡️ Git is Fast and Modern Distributed Version Control System. Some may call it as Source Control System.
+	➡️ Version Control is managing multiple versions of your software.
+	➡️ Git facilitates collaborative changes to files.
+  ➡️ Git provides a history of content changes.
+	➡️ Distributed Git is Team-Centric so that collaboration happens naturally.
+	➡️ We can go back to older versions of our project.
+
+COMMANDS
+	
+    ➡️ GIT INIT 
+	  -> Initialize empty repository or reinitialize existing repository
+	  -> Creates .git folder which has maintains the configuration. This .git file stays hidden.
+    
+    ➡️ GIT ADD <FILE_NAME>
+	   -> Adds the specified file to the staging area 
+	  -> Once you add file to staging area, GIT starts tracking the changes hapening in the file.
+	  ➡️ GIT ADD . 
+     -> To add all the files in current directory in staging area
+
+    ➡️ GIT COMMIT -M <MESSAGE>
+	  -> Commits the file in the staging area
+	  -> Message is used as a comment for that commit
+
+    ➡️ GIT SHOW
+	    -> Used to describe the last commit where HEAD is pointing to.
+
+    ➡️ GIT LOG
+	    -> Used to display all the previous commits
+
+    ➡️ GIT STATUS 
+	    -> Shows the status of current directory where all the files where tracked, modified or deleted.
+ 
+ 
