@@ -3,12 +3,19 @@ What is Git?--------->
 
 Version control---->
 -Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.
-Local Repository-Git local repository is the one on which we will make local changes, typically this local repository is on our computer.
+--->Allows developers to work simultaneously.
+--->Does not allow overwriting each other’s changes.
+--->Maintains a history of every version.
+
 
 Git Repository---->
 -Git remote repository is the one of the server, typically a machine situated at 42 miles away.
 
+Local Repository---->
+-Git local repository is the one on which we will make local changes, typically this local repository is on our computer.
 Git Commands-
+
+
 1) git init :
 	- This command initializes empty git repository.
 	- '.git' folder is created in the local folder (which is hidden).
