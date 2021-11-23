@@ -6,7 +6,7 @@ interface Lab4Support{
 public class Lab4 {
 
 	public static void main(String[] args) {
-		Lab4Support s1 = ()->System.out.println("ss");
+		Lab4Support s1 = ()->System.out.println("sk");
 	}
 
 }
