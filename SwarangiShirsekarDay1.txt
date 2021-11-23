@@ -1,0 +1,78 @@
+Day 1 Summary :
+
+#Rich Clients :-
+Is installed on our own System (Application -> main).
+#Thin Clients :-
+Is just Browser + Network Connectivity ie. Web Server.
+#Central Repository :-
+We need it check if the code is correct or to validate the code.
+#Version Control(Source Control) :-
+Keeps track of the changes( commits , updates , etc) that were made at every instant.
+Managing multiple versions of files , programs , websites ,etc.
+#Git :-
+It's a distributed Version Control System.
+Changes are made to the clone which is 'pulled' from the repository and then the changes are pushed back into the repository.
+#Clone :-
+Creating a copy of the original file.
+#Git init :-
+Initializes an empty git repository(in current directory).
+
+
+Video 1 Summary :
+
+#Version Control :-
+Provides us history to track the changes that were made.
+When we make changes in our file and commit them after every small change, to get a particular instant at which we modified our file , this is where we need version 
+control.
+It provides clarity to when the changes were made , why the changes were made and also who made the changes (if there are multiple contributors).
+
+
+Video 2 Summary :
+
+#Git :-
+Distributed Version Control System .
+It's locally enabled that is we can version control items anywhere no complicated software is required.
+#Advantages of Git Version Control System : -
+-Fast and Mordern.
+-Provides history of changes that were made.
+-Provides Collaborative changes to files(many users can work on the same file at the same time).
+-easy to use.
+-Flexible so that it fits everyone's needs.
+-Gives precise control over commit.
+
+
+Video 3 Summary :
+
+#Developing git :-
+- git init project_name :-
+Creates a directory of folder that contains project files and control files(stores history of changes made ,sourse code ,etc).
+- git add filename :-
+Notices the file , signals that we want the file to participate in the next commit.
+- git commit -m 'message' :-
+Allows us to provide commit and in message describing what changes in commit were made.
+- git log :-
+ shows a list of all the commits made to a repository.
+ - git show :-
+ Used to view the details.
+ 
+ 
+ Video 4 Summary :
+ 
+ Git focuses on content.
+ Level of precision is more than any other version controls.
+ Allows us to choose which file can participate in the next commit (opt in ).
+ Features :-
+ - It's open 
+ Lets people make contributions. It is controlled and reveals the type of process.
+ -Distributed :-
+ Efficient with network transfer, very easy.
+ -Journal :-
+ Looks more like a journal rather than a block of changes made overall(helps understanding where ,why ,when and by whom the changes were made).
+ -Anywhere :-
+ All changes can be done in offline mode. Keeps many things local as possible.
+
+ 
+
+
+
+
