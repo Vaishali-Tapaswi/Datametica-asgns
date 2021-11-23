@@ -7,13 +7,12 @@ public class Lab3 {
 		System.out.println("Enter a number to continue..");
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextInt();
-		System.out.print("start of main...");
-		System.out.println();
-		Runnable simple = ()-> 	  {
-						System.out.println("in run of Simple");
+		System.out.println("This is a start of main...");
+		Runnable verysimple = ()-> 	  {
+						System.out.println("in run of Very Simple");
 						try { 			Thread.sleep(3000); 		} catch (InterruptedException e) { 	e.printStackTrace(); 			}
 				};
-		Thread t1 = new Thread(simple);
+		Thread t1 = new Thread(verysimple);
 		t1.start();
 		System.out.println("end of main......");
 		
