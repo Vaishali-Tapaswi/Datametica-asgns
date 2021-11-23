@@ -8,6 +8,7 @@ public class Lab2 {
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextInt();
 		
+		System.out.println("For loop initiated");
 		for(int i =0; i< 30000;i++){
 			List<String> list = new ArrayList<>();
 			for(int j =0; j< 30000;j++){
