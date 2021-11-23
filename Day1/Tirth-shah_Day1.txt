@@ -1,0 +1,11 @@
+Git
+
+Rich client program
+  Rich client programs are those programs that require more high end hardware and utilises all of the available hardware to execute.
+
+Thin client program  
+  Thin client program are those program that do not require much of a hardware to execute.
+
+Version control 
+
+Need of git hub
