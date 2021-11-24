@@ -1,0 +1,7 @@
+Watch - Introduction to Git - Core Concepts (recommended prerequisite): https://youtu.be/uR6G2v_WsRA
+        Introduction to Git - Branching and Merging - https://www.youtube.com/watch?v=FyAAIHHClqI
+        
+https://www.atlassian.com/git/tutorials/syncing
+
+Prepare a document, create a directory, git push..
+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
