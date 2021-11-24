@@ -1,0 +1,15 @@
+# Types of apps:
+1. Rich clients
+	Utilizes full hardware resources
+2. Thin clients
+	Only browser and network connectivity required
+3. Rich internet applications
+	Only browser and network connectivity required but provides rich experience
+
+# Git commands
+1. git init
+	initializes empty repository
+2. git log
+	shows the detailed log of all the commits
+3. git show
+	shows the detailed log of the most recent commit
