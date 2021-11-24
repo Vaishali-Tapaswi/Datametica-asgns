@@ -10,6 +10,11 @@ DAY1
  . -> Current repo
  .. -> Parent repo
 
+# Version Control - Keeps track of the changes( commits , updates , etc) that were made at every instant.
+(Source control)  Managing multiple versions of files , programs , websites ,etc.
+		  Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. 
+		  
+# Git - It is a distributed Version Control System
 
 GIT COMMANDS
 -------------
