@@ -1,0 +1,28 @@
+Day to Day Tasks
+create Remote Repo (5 files -> t1..t5.txt)
+1. have a copy of entire repo on local machine (c:\dummy)
+------->
+2. Add three more files t1..t3.java to local repo and commit to remote repo
+
+3. Add *.doc files to local directory 
+     see untracked files
+        docs will be listed here
+    create gitignore file to remove *.doc
+    see untracked files
+        docs will not be listed here
+
+4. add / remove / modify t1.java
+    have 3/4 commits
+    check all commits information
+    find difference between commits / branches / staging area
+5. delete few files from working folder
+       get it from staging / repository
+6. push all the changes to remote repo
+  obseve all commits on github app
+
+7. remove a file from current local repo.
+    fetch from remote repo
+    
+  
+    
+
