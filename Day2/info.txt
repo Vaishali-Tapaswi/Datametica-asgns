@@ -1,7 +1,33 @@
-Watch - Introduction to Git - Core Concepts (recommended prerequisite): https://youtu.be/uR6G2v_WsRA
-        Introduction to Git - Branching and Merging - https://www.youtube.com/watch?v=FyAAIHHClqI
-        
-https://www.atlassian.com/git/tutorials/syncing
+--------------------------------------------Introduction to Git Core Concepts------------------------------------------
 
-Prepare a document, create a directory, git push..
-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
+
+Commits
+Commit holds the current state of the repository. A commit is also named by SHA1 hash. You can consider a commit object as a node of the linked list. Every commit object has a pointer to the parent commit object. From a given commit, you can traverse back by looking at the parent pointer to view the history of the commit. If a commit has multiple parent commits, then that particular commit has been created by merging two branches.
+
+
+
+Branches
+Branches are used to create another line of development. By default, Git has a master branch, which is same as trunk in Subversion. Usually, a branch is created to work on a new feature. Once the feature is completed, it is merged back with the master branch and we delete the branch. Every branch is referenced by HEAD, which points to the latest commit in the branch. Whenever you make a commit, HEAD is updated with the latest commit.
+
+Deleting a branch LOCALLY
+Git will not let you delete the branch you are currently on so you must make sure to checkout a branch that you are NOT deleting. For example: git checkout main
+
+
+Git remote
+The git remote command lets you create, view, and delete connections to other repositories. Remote connections are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access to another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
+
+command-git remote add <name> <url>
+
+Git remote discussion
+Git is designed to give each developer an entirely isolated development environment. This means that information is not automatically passed back and forth between repositories. Instead, developers need to manually pull upstream commits into their local repository or manually push their local commits back up to the central repository. The git remote command is really just an easier way to pass URLs to these "sharing" commands.
+
+
+The origin Remote
+When you clone a repository with git clone, it automatically creates a remote connection called origin pointing back to the cloned repository. This is useful for developers creating a local copy of a central repository, since it provides an easy way to pull upstream changes or publish local commits. This behavior is also why most Git-based projects call their central repository origin.
+
+Repository URLs
+Git supports many ways to reference a remote repository. Two of the easiest ways to access a remote repo are via the HTTP and the SSH protocols. HTTP is an easy way to allow anonymous, read-only access to a repository. For example:
+
+
+Git remote commands
+The git remote command is one of many Git commands that takes additional appended 'subcommands'. Below is an examination of the commonly used git remote subcommands.
