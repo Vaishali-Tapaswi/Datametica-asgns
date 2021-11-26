@@ -1,0 +1,31 @@
+531  mkdir day3_repo
+  532  cd day3_repo/
+  533  ls
+  534  git init
+  535  cd ..
+  536  cd repo/
+  537  ls
+  538  cd ../day3_repo/
+  539  l
+  540  ls
+  541  vim Hello.java
+  542  cat Hello.java >> SayHello.java
+  543  vim SayHello.java 
+  544  vim hello.py
+  545  cat hello.py >> hello_py3.py
+  546  vim hello_py3.py 
+  547  ls
+  548  git status
+  549  vim scratch.txt
+  550  git status
+  551  vim .gitignore
+  552  git status
+  553  git add *.java
+  554  ls
+  555  git status
+  556  git commit -m "added files"
+  557  git status
+  558  vim SayHello.java 
+  559  git status
+  560  git add .gitignore 
+  561  git status
