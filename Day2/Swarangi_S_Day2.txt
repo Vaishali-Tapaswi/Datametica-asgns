@@ -1,0 +1,91 @@
+Video1 Summary  ----------
+
+What is git ->
+It is a type of VCS(Version Control System).
+VCS enables us to record changes over time.
+Enables us to work on differnt versions of a file.
+Git commit graph ->
+Tracks changes of file overtime by allowing us to commit the changes.
+Commit saves the state of a file at a particular instant.
+the series of commit is known as git commit graph.
+Three parts of a repository ->
+1. Working tree -
+What we see on our file system(when we modify files).
+2. History -
+Is equivalent to commit graph. Keeps hidden directory(.git file).
+3. Staging Area -
+Only the changes in staging area are commited.
+The files that are in the the staging area are the only ones that are tracked.
+git init ->
+For strating a new repo.
+Adds a new hidden subdirectory.
+git config ->
+To set username and email .
+git staus ->
+Tells us how things stand in working tree and staging area.
+git add ->
+By using this command we can stage a file.
+git commit -m "msg" ->
+Commits everything that is in the staging area.
+Wroking tree clean ->
+nothing new in the directory (everything in the staging area is already commited).
+git log ->
+It tells us about the commit graph.
+most recent commit is at the top.
+shows hash value, author , timestamp  ofgit  each commit.
+-p shows us what actual changes are made with each commit.
+Git performs a SHA-1 hash of every commit that is made.
+Every commit has a unique hash value.
+git diff ->
+To see the difference between tracked files in working tree and staging area.
+Gives information about teh files that are being tracked(staged).
+--staged shows differnt between staging area and most recent commit.
+git rm ->
+To remove a file from repo.
+Does 2 things at once - removes file from repo and also stages the removal.
+git checkout ->
+To switch branches and restore changes made in the working tree.
+.gitignore ->
+The files that are not required to track can be achieved by using this command.
+
+
+Video2 Summary  -------
+
+Branch ->
+Allows to work on different versions of file in parallel.
+Edits made in a branch can be independent of work on other branches.
+Branches can result in seperate versions of same file.
+It is just a pointer to SHA-1 of the latest commit made.
+Head ->
+Head is a pointer that points to a branch.
+Head pointer tells us what we have checked out.
+Alias ->
+Used to create a reusable command.
+git branch <branchname> ->
+creates a new branch.
+git commit -a -m "msg" ->
+Shortcut and commit at the same time.
+Merging Branches ->
+1. Fast Forward Merge -
+When there is a direct path between the main branch to the sub-branch.
+It moves the main branch to where the sub-branch is.
+For fast forward merge ,  the head should point at main branch.
+2. 3-way merge -
+When there is no direct path between the main branch and sub-branch.
+ git branch -d <branchname> ->
+ To delete branch.
+ w/o merging a branch we can't delete it.
+ Merge Conflict ->
+ This happens when we try to merge files that have made changes in same files.
+ git merge --abort ->
+ abort a merge.
+ Detached head ->
+ When the head doesnot point to any branch instead it points to a commit , it's called a detached head state.
+ Handling -
+ Checkout a branch  ,  Create a new branch.
+ Git stash ->
+ When we make changes in a file while being in a branch and switch to another branch w/o commiting , we can use this command to do so.
+ git stash apply -
+ to re-apply the changes made in a file that was stashed.
+ 
+ 
