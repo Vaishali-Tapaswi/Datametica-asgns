@@ -1,0 +1,1775 @@
+ronit.magar@DM1382 day3]$ git init
+Reinitialized existing Git repository in /home/ronit.magar/Documents/dayAssign/day3/.git/
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	LowSalaryException.java
+	TestEmployee.java
+	finalDemo.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ronit.magar@DM1382 day3]$ git add .
+[ronit.magar@DM1382 day3]$ git commit -m "first commit"
+[main 5e61ce4] first commit
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 59 insertions(+)
+ create mode 100644 LowSalaryException.java
+ create mode 100644 TestEmployee.java
+ create mode 100644 finalDemo.java
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git push x-special/nautilus-clipboard
+fatal: 'x-special/nautilus-clipboard' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[ronit.magar@DM1382 day3]$ copy
+bash: copy: command not found...
+[ronit.magar@DM1382 day3]$ file:///home/ronit.magar/IdeaProjects/JavaPractice/src/Day3/finalDemo.java
+bash: file:///home/ronit.magar/IdeaProjects/JavaPractice/src/Day3/finalDemo.java: No such file or directory
+[ronit.magar@DM1382 day3]$ file:///home/ronit.magar/IdeaProjects/JavaPractice/src/Day3/LowSalaryException.java
+bash: file:///home/ronit.magar/IdeaProjects/JavaPractice/src/Day3/LowSalaryException.java: No such file or directory
+[ronit.magar@DM1382 day3]$ file:///home/ronit.magar/IdeaProjects/JavaPractice/src/Day3/TestEmployee.java
+bash: file:///home/ronit.magar/IdeaProjects/JavaPractice/src/Day3/TestEmployee.java: No such file or directory
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/RONMAGAR/day3.git'
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git 
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.18 KiB | 1.18 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/RONMAGAR/day3.git
+   0559b7a..5e61ce4  main -> main
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	DOC1
+	DOC1.doc
+	DOC2.doc
+	DOC3.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	DOC1.doc
+	DOC2.doc
+	DOC3.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	DOC1.doc
+	DOC2.doc
+	DOC3.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ronit.magar@DM1382 day3]$ touch .gitignore
+[ronit.magar@DM1382 day3]$ gedit .gitignore
+[ronit.magar@DM1382 day3]$ git add .gitignore
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+
+[ronit.magar@DM1382 day3]$ git commit -m ".itignore file"
+[main eb5afa1] .itignore file
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   finalDemo.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ronit.magar@DM1382 day3]$ git commit -m "modified"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   finalDemo.java
+
+no changes added to commit
+[ronit.magar@DM1382 day3]$ git add finalDemo.java
+[ronit.magar@DM1382 day3]$ git commit -m "modified java file"
+[main 96daf33] modified java file
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git push 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
+fatal: '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' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 571 bytes | 571.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/RONMAGAR/day3.git
+   5e61ce4..96daf33  main -> main
+[ronit.magar@DM1382 day3]$ GIT DIFF
+bash: GIT: command not found...
+Similar command is: 'git'
+[ronit.magar@DM1382 day3]$ git diff
+[ronit.magar@DM1382 day3]$ git diff
+[ronit.magar@DM1382 day3]$ git log
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5 (HEAD -> main)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+
+commit 0559b7af7222ba98326dd7784d7f38fee56ac2d5 (origin/main, origin/HEAD)
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:54 2021 +0530
+
+    Rename fil5 to fil5.txt
+
+
+commit f3a5cd17671c21abba1ec4a86167b6768c1f6721
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:32 2021 +0530
+
+    Create fil5
+
+commit 7c88fc0b0e67fa28ed7fe69818db1bfa2c321caf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:11 2021 +0530
+
+    Create fil4.txt
+
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+ ESCOC
+47560b5 (HEAD -> main)
+datametica.com>
+
+
+
+
+40c42db
+datametica.com>
+
+
+
+
+bcd3442
+datametica.com>
+
+
+
+
+56ac2d5 (origin/main, origin/HEAD)
+s.noreply.github.com>
+
+
+
+
+c1f6721
+s.noreply.github.com>
+
+
+
+
+c321caf
+s.noreply.github.com>
+
+
+
+
+ecfc32b
+s.noreply.github.com>
+
+
+
+
+b8207cf
+s.noreply.github.com>
+
+
+
+
+8a3a849
+s.noreply.github.com>
+
+
+
+
+c97272c
+s.noreply.github.com>
+
+
+
+ ESCOD
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+ ESCOD
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+ ESCOD
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+ ESCOD
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+ ESCOC
+ecfc32b
+s.noreply.github.com>
+
+
+
+
+b8207cf
+s.noreply.github.com>
+
+
+
+
+8a3a849
+s.noreply.github.com>
+
+
+
+
+c97272c
+s.noreply.github.com>
+
+
+
+ ESCOD
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+ ESCOD
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+
+[1]+  Stopped                 git log
+[ronit.magar@DM1382 day3]$ git diff eb5afa1a3ea139021f405be51d116242140c42db
+diff --git a/finalDemo.java b/finalDemo.java
+index ca87ad8..83965e7 100644
+--- a/finalDemo.java
++++ b/finalDemo.java
+@@ -10,7 +10,7 @@ public class finalDemo {
+     }
+ 
+     final void display(){
+-        System.out.println("Display in finalDemo");
++        System.out.println("Display in finalDemo!!!");
+     }
+ }
+ 
+@@ -20,5 +20,5 @@ class childfinalDemo extends finalDemo{
+ //        cannot be override as it is declared  final
+ //    }
+ 
+-    //final class cannot be inerited
++    //final class cannot be inerited!
+ }
+\ No newline at end of file
+[ronit.magar@DM1382 day3]$ git log
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5 (HEAD -> main)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+
+commit 0559b7af7222ba98326dd7784d7f38fee56ac2d5 (origin/main, origin/HEAD)
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:54 2021 +0530
+
+    Rename fil5 to fil5.txt
+
+commit f3a5cd17671c21abba1ec4a86167b6768c1f6721
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:32 2021 +0530
+
+    Create fil5
+
+commit 7c88fc0b0e67fa28ed7fe69818db1bfa2c321caf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:11 2021 +0530
+
+    Create fil4.txt
+
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+
+[2]+  Stopped                 git log
+[ronit.magar@DM1382 day3]$ git diff 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5c51117
+--- /dev/null
++++ b/.gitignore
++++ b/.gitignore
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5c51117
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++*.doc
+diff --git a/finalDemo.java b/finalDemo.java
+index ca87ad8..83965e7 100644
+--- a/finalDemo.java
++++ b/finalDemo.java
+@@ -10,7 +10,7 @@ public class finalDemo {
+     }
+ 
+     final void display(){
+-        System.out.println("Display in finalDemo");
++        System.out.println("Display in finalDemo!!!");
+     }
+ }
+ 
+@@ -20,5 +20,5 @@ class childfinalDemo extends finalDemo{
+ //        cannot be override as it is declared  final
+ //    }
+ 
+-    //final class cannot be inerited
++    //final class cannot be inerited!
+ }
+\ No newline at end of file
+
+[3]+  Stopped                 git diff 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+[ronit.magar@DM1382 day3]$ git log
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5 (HEAD -> main)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+
+commit 0559b7af7222ba98326dd7784d7f38fee56ac2d5 (origin/main, origin/HEAD)
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:54 2021 +0530
+
+    Rename fil5 to fil5.txt
+
+commit f3a5cd17671c21abba1ec4a86167b6768c1f6721
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:32 2021 +0530
+
+    Create fil5
+
+commit 7c88fc0b0e67fa28ed7fe69818db1bfa2c321caf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:11 2021 +0530
+
+    Create fil4.txt
+
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+
+[4]+  Stopped                 git log
+[ronit.magar@DM1382 day3]$ git diff 96daf339bb120bdf8f9c7cf46058fea0747560b5
+[ronit.magar@DM1382 day3]$ git diff eb5afa1a3ea139021f405be51d116242140c42db
+diff --git a/finalDemo.java b/finalDemo.java
+index ca87ad8..83965e7 100644
+--- a/finalDemo.java
++++ b/finalDemo.java
+@@ -10,7 +10,7 @@ public class finalDemo {
+     }
+ 
+     final void display(){
+-        System.out.println("Display in finalDemo");
++        System.out.println("Display in finalDemo!!!");
+     }
+ }
+ 
+@@ -20,5 +20,5 @@ class childfinalDemo extends finalDemo{
+ //        cannot be override as it is declared  final
+ //    }
+ 
+-    //final class cannot be inerited
++    //final class cannot be inerited!
+ }
+\ No newline at end of file
+[ronit.magar@DM1382 day3]$ git diff 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5c51117
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++*.doc
+diff --git a/finalDemo.java b/finalDemo.java
+index ca87ad8..83965e7 100644
+--- a/finalDemo.java
++++ b/finalDemo.java
+@@ -10,7 +10,7 @@ public class finalDemo {
+     }
+ 
+     final void display(){
+-        System.out.println("Display in finalDemo");
++        System.out.println("Display in finalDemo!!!");
+     }
+ }
+ 
+@@ -20,5 +20,5 @@ class childfinalDemo extends finalDemo{
+ //        cannot be override as it is declared  final
+ //    }
+ 
+-    //final class cannot be inerited
++    //final class cannot be inerited!
+ }
+\ No newline at end of file
+
+[5]+  Stopped                 git diff 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+[ronit.magar@DM1382 day3]$ git branch day3b1
+[ronit.magar@DM1382 day3]$ git checkout day3b1
+Switched to branch 'day3b1'
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   fil1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ronit.magar@DM1382 day3]$ git add .
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   fil1.txt
+
+[ronit.magar@DM1382 day3]$ git commit -m "new branch commit"
+[day3b1 91ad5d9] new branch commit
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[ronit.magar@DM1382 day3]$ git log
+commit 91ad5d984986190bf7e7ae22397fd23328ec25fc (HEAD -> day3b1)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:16:33 2021 +0530
+
+    new branch commit
+
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5 (main)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+
+commit 0559b7af7222ba98326dd7784d7f38fee56ac2d5 (origin/main, origin/HEAD)
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:54 2021 +0530
+
+    Rename fil5 to fil5.txt
+
+commit f3a5cd17671c21abba1ec4a86167b6768c1f6721
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:32 2021 +0530
+
+    Create fil5
+
+commit 7c88fc0b0e67fa28ed7fe69818db1bfa2c321caf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:11 2021 +0530
+
+    Create fil4.txt
+
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+
+[6]+  Stopped                 git log
+[ronit.magar@DM1382 day3]$ git log --abbrev-commit 
+commit 91ad5d9 (HEAD -> day3b1)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:16:33 2021 +0530
+
+    new branch commit
+
+commit 96daf33 (main)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit 91ad5d9 (HEAD -> day3b1)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:16:33 2021 +0530
+
+    new branch commit
+
+commit 96daf33 (main)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+
+commit 0559b7a (origin/main, origin/HEAD)
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:54 2021 +0530
+
+    Rename fil5 to fil5.txt
+
+commit f3a5cd1
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:32 2021 +0530
+
+    Create fil5
+
+commit 7c88fc0
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:11 2021 +0530
+
+    Create fil4.txt
+
+commit ca43293
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c66
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fd
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+
+[7]+  Stopped                 git log --abbrev-commit
+[ronit.magar@DM1382 day3]$ git diff 91ad5d9 96daf33
+diff --git a/fil1.txt b/fil1.txt
+index 84bd3cb..e212970 100644
+--- a/fil1.txt
++++ b/fil1.txt
+@@ -1,2 +1 @@
+ file1
+-changed for shifting to new branch
+[ronit.magar@DM1382 day3]$ git branch
+* day3b1
+  main
+[ronit.magar@DM1382 day3]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git diff 91ad5d9 96daf33
+diff --git a/fil1.txt b/fil1.txt
+index 84bd3cb..e212970 100644
+--- a/fil1.txt
++++ b/fil1.txt
+@@ -1,2 +1 @@
+ file1
+-changed for shifting to new branch
+[ronit.magar@DM1382 day3]$ cat fil1.txt
+file1
+[ronit.magar@DM1382 day3]$ git checkout day3b1 file1.txt
+error: pathspec 'file1.txt' did not match any file(s) known to git
+[ronit.magar@DM1382 day3]$ git checkout day3b1 fil1.txt
+Updated 1 path from b5a0071
+[ronit.magar@DM1382 day3]$ cat fil
+fil1.txt  fil2.txt  fil3.txt  fil4.txt  fil5.txt  
+[ronit.magar@DM1382 day3]$ cat fil1.txt 
+file1
+changed for shifting to new branch
+[ronit.magar@DM1382 day3]$ git diff 96daf33 91ad5d9
+diff --git a/fil1.txt b/fil1.txt
+index e212970..84bd3cb 100644
+--- a/fil1.txt
++++ b/fil1.txt
+@@ -1 +1,2 @@
+ file1
++changed for shifting to new branch
+[ronit.magar@DM1382 day3]$ git diff 96daf33 91ad5d9
+diff --git a/fil1.txt b/fil1.txt
+index e212970..84bd3cb 100644
+--- a/fil1.txt
++++ b/fil1.txt
+@@ -1 +1,2 @@
+ file1
++changed for shifting to new branch
+[ronit.magar@DM1382 day3]$ git diff 91ad5d9 96daf33
+diff --git a/fil1.txt b/fil1.txt
+index 84bd3cb..e212970 100644
+--- a/fil1.txt
++++ b/fil1.txt
+@@ -1,2 +1 @@
+ file1
+-changed for shifting to new branch
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git commit -m "2nd commit"
+[main 1e57fa8] 2nd commit
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/RONMAGAR/day3.git
+   96daf33..1e57fa8  main -> main
+[ronit.magar@DM1382 day3]$ git checkout day3b1
+Switched to branch 'day3b1'
+[ronit.magar@DM1382 day3]$ git branch
+* day3b1
+  main
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'day3b1' on GitHub by visiting:
+remote:      https://github.com/RONMAGAR/day3/pull/new/day3b1
+remote: 
+To https://github.com/RONMAGAR/day3.git
+ * [new branch]      day3b1 -> day3b1
+[ronit.magar@DM1382 day3]$ 
+[ronit.magar@DM1382 day3]$ git statuS
+git: 'statuS' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    LowSalaryException.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ronit.magar@DM1382 day3]$ git rm 
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+[ronit.magar@DM1382 day3]$ git rm LowSalaryException.java
+rm 'LowSalaryException.java'
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    LowSalaryException.java
+
+[ronit.magar@DM1382 day3]$ git commit -m "delete committed"
+[day3b1 507d349] delete committed
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 7 deletions(-)
+ delete mode 100644 LowSalaryException.java
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git diff
+[ronit.magar@DM1382 day3]$ git log
+commit 507d3496ad4990515377dd9a8d4688f53873daa0 (HEAD -> day3b1)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:34:33 2021 +0530
+
+    delete committed
+
+commit 91ad5d984986190bf7e7ae22397fd23328ec25fc
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:16:33 2021 +0530
+
+    new branch commit
+
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+...skipping...
+~
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+:6...skipping...
+commit 507d3496ad4990515377dd9a8d4688f53873daa0 (HEAD -> day3b1)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:34:33 2021 +0530
+
+    delete committed
+
+commit 91ad5d984986190bf7e7ae22397fd23328ec25fc
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:16:33 2021 +0530
+
+    new branch commit
+
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+...skipping...
+
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+
+[8]+  Stopped                 git log
+[ronit.magar@DM1382 day3]$ git log
+commit 507d3496ad4990515377dd9a8d4688f53873daa0 (HEAD -> day3b1)
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:34:33 2021 +0530
+
+    delete committed
+
+commit 91ad5d984986190bf7e7ae22397fd23328ec25fc
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:16:33 2021 +0530
+
+    new branch commit
+
+commit 96daf339bb120bdf8f9c7cf46058fea0747560b5
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:04:33 2021 +0530
+
+    modified java file
+
+commit eb5afa1a3ea139021f405be51d116242140c42db
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 15:01:25 2021 +0530
+
+    .itignore file
+
+commit 5e61ce4ee33a84ef8dfdc62c508af5097bcd3442
+Author: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Date:   Thu Nov 25 14:48:57 2021 +0530
+
+    first commit
+
+commit 0559b7af7222ba98326dd7784d7f38fee56ac2d5 (origin/main, origin/HEAD)
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:54 2021 +0530
+
+    Rename fil5 to fil5.txt
+
+commit f3a5cd17671c21abba1ec4a86167b6768c1f6721
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:32 2021 +0530
+
+    Create fil5
+
+commit 7c88fc0b0e67fa28ed7fe69818db1bfa2c321caf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:42:11 2021 +0530
+
+    Create fil4.txt
+
+commit ca432930dc04b35f9af0790bfbeb3604eecfc32b
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:41:31 2021 +0530
+
+    Create fil3.txt
+
+commit ed36365d5777063de882a5e3671fe605cb8207cf
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:45 2021 +0530
+
+    Rename fil2 to fil2.txt
+
+commit 6289c6630a5749d743fef3d99f244a2b28a3a849
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:40:15 2021 +0530
+
+    Create fil2
+
+commit 50723fdd4017d30f94c02b2008fb6b3a6c97272c
+Author: RONMAGAR <94887188+RONMAGAR@users.noreply.github.com>
+Date:   Thu Nov 25 14:39:56 2021 +0530
+
+    Create fil1.txt
+
+[9]+  Stopped                 git log
+[ronit.magar@DM1382 day3]$ git diff 91ad5d984986190bf7e7ae22397fd23328ec25fc
+diff --git a/LowSalaryException.java b/LowSalaryException.java
+deleted file mode 100644
+index bd0f4e1..0000000
+--- a/LowSalaryException.java
++++ /dev/null
+@@ -1,7 +0,0 @@
+-package Day3;
+-// USER DEFINED EXCEPTION
+-public class LowSalaryException extends Exception{
+-    public LowSalaryException(String msg){
+-        super(msg);
+-    }
+-}
+[ronit.magar@DM1382 day3]$ git branch'
+> 
+> git status
+> 
+> ;
+> as
+> 
+> 
+> 
+> '
+git: 'branch
+
+git status
+
+;
+as
+
+
+
+' is not a git command. See 'git --help'.
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+[ronit.magar@DM1382 day3]$ git branch
+* day3b1
+  main
+[ronit.magar@DM1382 day3]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    fil3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ronit.magar@DM1382 day3]$ git checkout fil3.txt
+Updated 1 path from the index
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+To https://github.com/RONMAGAR/day3.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/RONMAGAR/day3.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git MAIN
+error: src refspec MAIN does not match any
+error: failed to push some refs to 'https://github.com/RONMAGAR/day3.git'
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git main
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+To https://github.com/RONMAGAR/day3.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/RONMAGAR/day3.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[ronit.magar@DM1382 day3]$ git BRANCH
+git: 'BRANCH' is not a git command. See 'git --help'.
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git 
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+To https://github.com/RONMAGAR/day3.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/RONMAGAR/day3.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[ronit.magar@DM1382 day3]$ git fetch https://github.com/RONMAGAR/day3.git 
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git 
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+To https://github.com/RONMAGAR/day3.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/RONMAGAR/day3.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[ronit.magar@DM1382 day3]$ git checkout day3b1
+Switched to branch 'day3b1'
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git 
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 392 bytes | 392.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/RONMAGAR/day3.git
+   91ad5d9..36e26ba  day3b1 -> day3b1
+[ronit.magar@DM1382 day3]$ git puLL https://github.com/RONMAGAR/day3.git 
+git: 'puLL' is not a git command. See 'git --help'.
+
+The most similar commands are
+	pull
+	push
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git 
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date!
+Merge made by the 'recursive' strategy.
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git 
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+[ronit.magar@DM1382 day3]$ git branch
+* day3b1
+  main
+[ronit.magar@DM1382 day3]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git 
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Updating 1e57fa8..9004404
+Fast-forward
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git 
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+[ronit.magar@DM1382 day3]$ git push https://github.com/RONMAGAR/day3.git 
+Username for 'https://github.com': RONMAGAR
+Password for 'https://RONMAGAR@github.com': 
+Everything up-to-date
+[ronit.magar@DM1382 day3]$ GIT BRANCH
+bash: GIT: command not found...
+Similar command is: 'git'
+[ronit.magar@DM1382 day3]$ git branc
+git: 'branc' is not a git command. See 'git --help'.
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    fil4.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ronit.magar@DM1382 day3]$ git fetch --stage
+error: unknown option `stage'
+usage: git fetch [<options>] [<repository> [<refspec>...]]
+   or: git fetch [<options>] <group>
+   or: git fetch --multiple [<options>] [(<repository> | <group>)...]
+   or: git fetch --all [<options>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local reference
+    -m, --multiple        fetch from multiple remotes
+    -t, --tags            fetch all tags and associated objects
+    -n                    do not fetch all tags (--no-tags)
+    -j, --jobs <n>        number of submodules fetched in parallel
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -P, --prune-tags      prune local tags no longer on remote and clobber changed tags
+    --recurse-submodules[=<on-demand>]
+                          control recursive fetching of submodules
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    -u, --update-head-ok  allow updating of HEAD ref
+    --progress            force progress reporting
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --filter <args>       object filtering
+
+[ronit.magar@DM1382 day3]$ git fetch --staged
+error: unknown option `staged'
+usage: git fetch [<options>] [<repository> [<refspec>...]]
+   or: git fetch [<options>] <group>
+   or: git fetch --multiple [<options>] [(<repository> | <group>)...]
+   or: git fetch --all [<options>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local reference
+    -m, --multiple        fetch from multiple remotes
+    -t, --tags            fetch all tags and associated objects
+    -n                    do not fetch all tags (--no-tags)
+    -j, --jobs <n>        number of submodules fetched in parallel
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -P, --prune-tags      prune local tags no longer on remote and clobber changed tags
+    --recurse-submodules[=<on-demand>]
+                          control recursive fetching of submodules
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    -u, --update-head-ok  allow updating of HEAD ref
+    --progress            force progress reporting
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --filter <args>       object filtering
+
+[ronit.magar@DM1382 day3]$ git checkout fil4.txt
+Updated 1 path from the index
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    finalDemo.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ronit.magar@DM1382 day3]$ git rm finalDemo.java
+rm 'finalDemo.java'
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    finalDemo.java
+
+[ronit.magar@DM1382 day3]$ git commit -m 'deleted'
+[main ee1a2b4] deleted
+ Committer: Ronit Magar <ronit.magar@DM1382.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 24 deletions(-)
+ delete mode 100644 finalDemo.java
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3.git
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+[ronit.magar@DM1382 day3]$ git fetch https://github.com/RONMAGAR/day3.git
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+[ronit.magar@DM1382 day3]$ git reset --head hard
+error: unknown option `head'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <paths>...
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+
+[ronit.magar@DM1382 day3]$ git reset --hard https://github.com/RONMAGAR/day3.git/main
+fatal: Invalid object name 'https'.
+[ronit.magar@DM1382 day3]$ git reset --hard https://github.com/RONMAGAR/day3.git
+fatal: Invalid object name 'https'.
+[ronit.magar@DM1382 day3]$ git reset --hard https://github.com/RONMAGAR/day3
+fatal: Invalid object name 'https'.
+[ronit.magar@DM1382 day3]$ git remote add day3 https://github.com/RONMAGAR/day3
+[ronit.magar@DM1382 day3]$ git reset --hard day3/main
+fatal: ambiguous argument 'day3/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git reset --hard day3
+fatal: ambiguous argument 'day3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ronit.magar@DM1382 day3]$ git checkout day3b1
+Switched to branch 'day3b1'
+[ronit.magar@DM1382 day3]$ git reset --hard day3/day3b1
+fatal: ambiguous argument 'day3/day3b1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ronit.magar@DM1382 day3]$ git reset --hard day3/main
+fatal: ambiguous argument 'day3/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ronit.magar@DM1382 day3]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git branch
+  day3b1
+* main
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3
+From https://github.com/RONMAGAR/day3
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+[ronit.magar@DM1382 day3]$ git pull https://github.com/RONMAGAR/day3 main
+From https://github.com/RONMAGAR/day3
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[ronit.magar@DM1382 day3]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git checkout day3b1
+Switched to branch 'day3b1'
+[ronit.magar@DM1382 day3]$ git status
+On branch day3b1
+nothing to commit, working tree clean
+[ronit.magar@DM1382 day3]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git fetch
+From https://github.com/RONMAGAR/day3
+   0559b7a..9004404  main       -> origin/main
+ * [new branch]      day3b1     -> origin/day3b1
+[ronit.magar@DM1382 day3]$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+[ronit.magar@DM1382 day3]$ git fetch
+
