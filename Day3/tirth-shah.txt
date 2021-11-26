@@ -1,0 +1,46 @@
+  180  git add t1.java
+  181  git status
+  182  cd day3assign/
+  183  ls
+  184  git add t1.java
+  185  git add *.java
+  186  git commit
+  187  git commit -m "message"
+  188  git push origin main 
+  189  git remote add r1 https://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@github.com/shahtirth07/day3assign.git
+  190  git push r1 main
+  191  git status
+  192  vim .gitignore
+  193  git status
+  194  git add .
+  195  git add *
+  196  git status
+  197  git add t1.java
+  198  git commit
+  199  git commit -m "message 1"
+  200  git add t2.java
+  201  git commit -m "message2"
+  202  git add t1.java
+  203  git commit -m "deleted editing"
+  204  git log
+  205  git diff 2440ec7 3ecdc7
+  206  git status
+  207  git rm t1.txt t1.java
+  208  git status
+  209  git add .
+  210  git push r1 main
+  211  git add .
+  212  git commit -m "deleted t1"
+  213  git push r1 main 
+  214  git log
+  215  git reset
+  216  git reset 4bdf27665691922792f32c50f57685fe46eaff49
+  217  git checkout 4bdf27665691922792f32c50f57685fe46eaff49
+  218  git checkout 4bdf27665691922792f32c50f57685fe46eaff49 t1.java t1.txt
+  219  git add .
+  220  git commit -m "got back deleted files"
+  221  git checkout main
+  222  git commit
+  223  git push r1 main 
+  224  git push r1 main -f
+  225  
