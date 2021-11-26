@@ -116,7 +116,11 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 [vasuki.rohilla@DM1033 day3assign]$ 
 
-4.
+4. 4. add / remove / modify t1.java
+    have 3/4 commits
+    check all commits information
+    find difference between commits / branches / staging area
+
 5. 
 6.
 7.
