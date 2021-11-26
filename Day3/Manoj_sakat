@@ -10,7 +10,7 @@ git reset-deleted files
 
 git checkout-to get deleted files
 
-git fetch-to fetch the repo from remote to local
+git fetch-to fetch the repo from remote to local it doesnt include it to the working dir.
 
 git diff commit_id commit_id
 
