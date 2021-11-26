@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------------------------Day3 Assignment-------------------------------------------------------------------------------------------------------------
+
+git clone <url> - to clone remote repo to local
+
+git remote add origin <url>-
+
+git push -f origin branch_name
+
+git reset-deleted files
+
+git checkout-to get deleted files
+
+git fetch-to fetch the repo from remote to local
+
+git diff commit_id commit_id
+
+git ignore-
+.gitignore>>*.txt - it will ignore tracking of all .txt files
