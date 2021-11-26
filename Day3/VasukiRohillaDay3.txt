@@ -1,0 +1,473 @@
+Day to Day Tasks
+create Remote Repo (5 files -> t1..t5.txt)
+1. have a copy of entire repo on local machine (c:\dummy)
+------->
+vasuki.rohilla@DM1033 day3 assign]$ git clone https://github.com/vasukiRohilla/day3assign.git
+Cloning into 'day3assign'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+==================================================================================================================================
+2. Add three more files t1..t3.java to local repo and commit to remote repo
+[vasuki.rohilla@DM1033 day3assign]$ ls
+t1.txt  t2.txt  t3.txt  t4.txt  t5.txt
+[vasuki.rohilla@DM1033 day3assign]$ touch t1.java
+[vasuki.rohilla@DM1033 day3assign]$ touch tt1.java
+[vasuki.rohilla@DM1033 day3assign]$ touch tt2.java
+[vasuki.rohilla@DM1033 day3assign]$ touch tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ ls
+t1.txt  t2.txt  t3.txt  t4.txt  t5.txt  tt1.java  tt2.java  tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ git init
+Reinitialized existing Git repository in /home/vasuki.rohilla/Documents/day3 assign/day3assign/.git/
+[vasuki.rohilla@DM1033 day3assign]$ git add .*java
+fatal: pathspec '.*java' did not match any files
+[vasuki.rohilla@DM1033 day3assign]$ git add *.java
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   tt1.java
+	new file:   tt2.java
+	new file:   tt3.java
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tt1.java
+ create mode 100644 tt2.java
+ create mode 100644 tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[vasuki.rohilla@DM1033 day3assign]$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/vasukiRohilla/day3assign.git'
+[vasuki.rohilla@DM1033 day3assign]$ git bt=ranch
+git: 'bt=ranch' is not a git command. See 'git --help'.
+[vasuki.rohilla@DM1033 day3assign]$ git branch
+* main
+[vasuki.rohilla@DM1033 day3assign]$ git push -u origin main
+Username for 'https://github.com': vasukiRohilla
+Password for 'https://vasukiRohilla@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vasukiRohilla/day3assign.git
+   130de59..e2faa22  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+[vasuki.rohilla@DM1033 day3assign]$ git branch
+* main
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+=============================================================================================================================
+
+3. Add *.doc files to local directory 
+     see untracked files
+        docs will be listed here
+    create gitignore file to remove *.doc
+    see untracked files
+        docs will not be listed here
+
+[vasuki.rohilla@DM1033 day3assign]$ touch aa.doc
+[vasuki.rohilla@DM1033 day3assign]$ touch bb.doc
+[vasuki.rohilla@DM1033 day3assign]$ ls
+aa.doc  bb.doc  t1.txt  t2.txt  t3.txt  t4.txt  t5.txt  tt1.java  tt2.java  tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	aa.doc
+	bb.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+[vasuki.rohilla@DM1033 day3assign]$ touch .gitignore
+[vasuki.rohilla@DM1033 day3assign]$ vim .gitignore
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+[vasuki.rohilla@DM1033 day3assign]$ 
+
+4.
+5. 
+6.
+7.
+[vasuki.rohilla@DM1033 day3assign]$ git add .
+[vasuki.rohilla@DM1033 day3assign]$ git commit -m "gitignore commit second"
+[main e7ed13e] gitignore commit second
+ Committer: Vasuki Rohilla <vasuki.rohilla@DM1033.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+[vasuki.rohilla@DM1033 day3assign]$ git push -u origin main
+Username for 'https://github.com': vasukiRohilla
+Password for 'https://vasukiRohilla@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 99.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vasukiRohilla/day3assign.git
+   e2faa22..e7ed13e  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+[vasuki.rohilla@DM1033 day3assign]$ git config --global --edit
+[vasuki.rohilla@DM1033 day3assign]$ git config --global user.name "vasukiRohilla"
+[vasuki.rohilla@DM1033 day3assign]$ git config --global user.password "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"
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   tt1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[vasuki.rohilla@DM1033 day3assign]$ git add tt1.java
+[vasuki.rohilla@DM1033 day3assign]$ git commit "third commit tt1.java"
+error: pathspec 'third commit tt1.java' did not match any file(s) known to git
+[vasuki.rohilla@DM1033 day3assign]$ git commit -m "third commit tt1.java"
+[main c54e154] third commit tt1.java
+ Committer: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[vasuki.rohilla@DM1033 day3assign]$ git diff
+diff --git a/tt1.java b/tt1.java
+index c0670be..df1b468 100644
+--- a/tt1.java
++++ b/tt1.java
+@@ -1 +1,3 @@
+ hekkoiowefkenfkerupadcwkruwiqrncruwiu
++dhudyuskjioiws
++
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   tt1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   tt1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[vasuki.rohilla@DM1033 day3assign]$ git diff
+diff --git a/tt1.java b/tt1.java
+index c0670be..98f2334 100644
+--- a/tt1.java
++++ b/tt1.java
+@@ -1 +1,3 @@
+-hekkoiowefkenfkerupadcwkruwiqrncruwiu
++class a{
++
++}
+[vasuki.rohilla@DM1033 day3assign]$ git add tt1.java
+[vasuki.rohilla@DM1033 day3assign]$ git commit -m "fourth commit tt1.java"
+[main 5dd440a] fourth commit tt1.java
+ Committer: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+[vasuki.rohilla@DM1033 day3assign]$ git log
+commit 5dd440a5f882322462f0ea23f83cbb489cf1cb3b (HEAD -> main)
+Author: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:48:42 2021 +0530
+
+    fourth commit tt1.java
+
+commit c54e154d0ae049cbf3867ca70764f876f2c42208
+Author: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:46:12 2021 +0530
+
+    third commit tt1.java
+
+commit e7ed13e7b9f2ec36d9eff57fd263812f4cdfa3cc (origin/main, origin/HEAD)
+Author: Vasuki Rohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:39:15 2021 +0530
+
+    gitignore commit second
+
+commit e2faa22ed5673adc0b987ae71272416382bb14a2
+Author: Vasuki Rohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:10:31 2021 +0530
+
+    java file first commit
+
+commit 130de59294b61074cf20c71e7179acf16298ad88
+Author: vasukiRohilla <94887219+vasukiRohilla@users.noreply.github.com>
+Date:   Thu Nov 25 23:04:08 2021 +0530
+
+    Create t5.txt
+
+commit 5dd440a5f882322462f0ea23f83cbb489cf1cb3b (HEAD -> main)
+Author: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:48:42 2021 +0530
+
+    fourth commit tt1.java
+
+commit c54e154d0ae049cbf3867ca70764f876f2c42208
+Author: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:46:12 2021 +0530
+
+    third commit tt1.java
+
+commit e7ed13e7b9f2ec36d9eff57fd263812f4cdfa3cc (origin/main, origin/HEAD)
+Author: Vasuki Rohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:39:15 2021 +0530
+
+    gitignore commit second
+
+commit 5dd440a5f882322462f0ea23f83cbb489cf1cb3b (HEAD -> main)
+Author: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:48:42 2021 +0530
+
+    fourth commit tt1.java
+
+commit c54e154d0ae049cbf3867ca70764f876f2c42208
+Author: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:46:12 2021 +0530
+
+    third commit tt1.java
+
+commit e7ed13e7b9f2ec36d9eff57fd263812f4cdfa3cc (origin/main, origin/HEAD)
+Author: Vasuki Rohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:39:15 2021 +0530
+
+    gitignore commit second
+
+commit e2faa22ed5673adc0b987ae71272416382bb14a2
+Author: Vasuki Rohilla <vasuki.rohilla@DM1033.datametica.com>
+Date:   Thu Nov 25 23:10:31 2021 +0530
+
+    java file first commit
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   tt1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[vasuki.rohilla@DM1033 day3assign]$ git diff
+diff --git a/tt1.java b/tt1.java
+index 98f2334..9cdaac4 100644
+--- a/tt1.java
++++ b/tt1.java
+@@ -1,3 +1,4 @@
+ class a{
+-
++public static void main(String []args)
++{}
+ }
+[vasuki.rohilla@DM1033 day3assign]$ git add tt1.java
+[vasuki.rohilla@DM1033 day3assign]$ git commit -m "fifth commit tt1.java"
+[main 1b53af0] fifth commit tt1.java
+ Committer: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[vasuki.rohilla@DM1033 day3assign]$ git branch
+* main
+[vasuki.rohilla@DM1033 day3assign]$ rm t1.txt
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    t1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[vasuki.rohilla@DM1033 day3assign]$ git checkout t1.txt
+Updated 1 path from the index
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[vasuki.rohilla@DM1033 day3assign]$ ls
+aa.doc  t1.txt  t3.txt  t5.txt    tt2.java
+bb.doc  t2.txt  t4.txt  tt1.java  tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[vasuki.rohilla@DM1033 day3assign]$ git push -u origin main
+Username for 'https://github.com': 
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/vasukiRohilla/day3assign.git/'
+[vasuki.rohilla@DM1033 day3assign]$ 
+[vasuki.rohilla@DM1033 day3assign]$ 
+[vasuki.rohilla@DM1033 day3assign]$ 
+[vasuki.rohilla@DM1033 day3assign]$ 
+[vasuki.rohilla@DM1033 day3assign]$ git config --global --edit
+[vasuki.rohilla@DM1033 day3assign]$ git push -u origin main
+Username for 'https://github.com': vasukiRohilla
+Password for 'https://vasukiRohilla@github.com': 
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 858 bytes | 143.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/vasukiRohilla/day3assign.git
+   e7ed13e..1b53af0  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    t1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[vasuki.rohilla@DM1033 day3assign]$ git rm t1.txt
+rm 't1.txt'
+[vasuki.rohilla@DM1033 day3assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    t1.txt
+
+[vasuki.rohilla@DM1033 day3assign]$ git pull 
+Already up to date.
+[vasuki.rohilla@DM1033 day3assign]$ git commit -m "sixth commit rm file"
+[main 852eb41] sixth commit rm file
+ Committer: vasukiRohilla <vasuki.rohilla@DM1033.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 t1.txt
+[vasuki.rohilla@DM1033 day3assign]$ git pull 
+Already up to date.
+[vasuki.rohilla@DM1033 day3assign]$ ls
+aa.doc  bb.doc  t2.txt  t3.txt  t4.txt  t5.txt  tt1.java  tt2.java  tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ git pull origin main
+From https://github.com/vasukiRohilla/day3assign
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[vasuki.rohilla@DM1033 day3assign]$ ls
+aa.doc  bb.doc  t2.txt  t3.txt  t4.txt  t5.txt  tt1.java  tt2.java  tt3.java
+[vasuki.rohilla@DM1033 day3assign]$ 
+
