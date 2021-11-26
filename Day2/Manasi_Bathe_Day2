@@ -1,0 +1,116 @@
+Video Review 1 
+     Introduction to Git : Core Topics
+          What is Git?
+                  Git is a distributed version control system (VCS). A VCS enables us to record changes to files over time.
+         Task of Git:-
+               1) Takes snapshot of file
+               2)Work on multiple versions of a file in parallel
+               
+        Git Commit Graph :-
+                Snapshots taken by git are called "commit".
+                          git init = starting a new repository
+                          git add filename = Adds file to the repo.
+                          git add . = add all files to the repo
+                          git commit = save changes as snapshots
+        3 areas of a Git repo-
+             Working Tree- In this are, we can add, delete and edit files.
+             Staging Area (Index) -Also known as index status of file can be tracked in this. When we add file in the repo it will be shifted to staging area.
+             History - commits in the files are seen in the history
+             
+             Working tree clean means there is nothing new in our directory 
+             
+             rm = to remove file from a directory
+             git log = shows commit (all commits) from the directory
+             git diff= shows difference between the working tree and the staging area 
+             git checkout --filename = undo the modification in the file.
+             vi filename= we can modify the file from terminal .
+             git diff --staged = After adding a file if we use this command the file gets staged.
+             
+             HEAD = refers to the most recent commit.
+                git reset HEAD filename = file is unstaged from the staged state.
+                (only restored s1 in the staging area ) (our working tree still has the new version of file. As git status confirms this).
+                
+                To restore a file S2 which was earlier deleted & then commited - 
+                     1) git log --s2 = shows all the commit happened on s2. Now check where on which commit s2 was added and note the unique commit id.
+                     2) git checkout <unique id> --s2 = restores s2 file.
+                     
+                 vi.gitignore = to  ignore the other files which are not needed in te directory
+                 
+                 
+                 
+Video Review 2
+             Introduction to Git: Branching and Merging 
+             
+             What is a branch for?
+                   Branch allows us to work on different versions of the same files in parallel.Branches result in a separation of versions of the same files.
+                   
+                   How is a branch implemented? 
+                      Every commit has a 40 hexadecimal sha-1 hash.
+                      A branch is a  pointer to a sha-1 hash.
+                   HEAD :- is a pointer that normally points to a branch not to the commit. Therefore called as "Symbolic pointer" (checked out )
+                        
+                        git log --all --decorate --oneline --graph 
+                     alias graph =  git log --all --decorate --oneline --graph    here alias graph is command alias
+                        and now by stating 
+                          graph    all the commits in the file are shown
+                          
+                   Create new branch :- 
+                        git branch <branch name>
+                        git branch = shows  all the branches in the directory. In this command "*" points to the head branch.
+                        
+                        Checkout and work on branches - 
+                              git checkout <branch name>  = the HEAD pointer will pointer will point to the given branch.
+                               
+                 Merge = 1) Fast-Forward merge :- 
+                                 git merge <branch name>  if there is a direct path from one branch to another branch,GIT performs a fast-forward merge.
+                                
+                           git diff master .. SDn = shows what will change when we merge SDN into master 
+                           cat filename = shows the content of the file 
+                           
+                           Deleting  the branches :-
+                                    git branch --merged = this will show that which branches in our directory is merged.
+                                    git branch -d <branch name> = this will delete the given branch
+                                    
+                                     when we haven't merged a branch with another branch and we try to delete it with above command , GIT will tell us that it isnt merged fully but git will allow us to decide if we want then we can,
+                                           use, git branch -D <branch name>
+                                           
+                                           2) 3-way merge :-
+                                                   in a 3way merge, there is no direct path between the branches so to merge  them together into a new commit  called as "merge commit"
+                                                        to make this merge commit git will look  at three commits - a) base commit (where the two branches started from.)
+                                                                                                                    b) last commit of each branch    git merge <branch name>
+                                                      
+                                                      Merge Conflicts :-
+                                                           A merge conflict occurs when we try to merge branches that have changed the same lines in the same files.
+                                                               
+                                                               To create a new branch and directly start working on it 
+                                                                      git checkout -b <branch name>
+                                                             git diff = shows our modification 
+                                                             git commit -a -m "msg" = to add & commit at the same time 
+                                                    If there is a conflict and we dont want to resolve it 
+                                                               git merge --abort
+                                                               
+                                                               To merge branches with conflicts call
+                                                                    git merge <branch name>     then this will show that there are conflicts to resolve them we have to edit our file where there are conflicts.
+                                                                 Deleting what is not required & saving what we require.
+                                                                 
+                                                                 Now add our file = git add <filename>
+                                                                                    git status
+                                                                                    git commit 
+                                                                        git branch stage = creates a stage branch 
+                                                                        git checkout stage = checks our new branch
+                                                                        
+                                                                        git stash = Git will save our new changes, so that we can apply them later
+                                                                        git stash list = we get to see our stashes
+                                                                        git stash list -p = observe edits that occured with each stash point
+                                                                        git stash apply = will re-apply most recent stash
+                                                                        git stash apply <stash label> = to apply specific stash
+                                                                       here, stash label can be obtained by stash list.
+                                                                         git stash save "msg" =nadd massage to the stash.
+                                                    
+                                  
+                              
+                              
+                              
+                              
+                              
+                
