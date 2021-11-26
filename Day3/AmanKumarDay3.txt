@@ -1,0 +1,70 @@
+  194  git clone https://github.com/shady48765/day3Ass.git
+  195  git add .
+  196  git status
+  197  git add *.java
+  198  git status
+  199  git commit -m "Java Files Added"
+  200  git remote add r1 https://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@github.com/shady48765/day3Ass.git
+  201  git push r1 main 
+  202  git status
+  203  vim .gitignore
+  204  git status
+  205  git add .
+  206  git status
+  207  git add java_file_1.java 
+  208  git commit -m "Java1 Commit1"
+  209  git add java_file_1.java 
+  210  git commit -m "modified"
+  211  git add java_file_1.java 
+  212  git commit -m "deleted unwanted comment"
+  213  git status
+  214  git log
+  215  git diff 
+  216  git diff e59db9d 3ff1825
+  217  git status
+  218  git rm java_file_1.java t1.txt 
+  219  git status
+  220  git add .
+  221  git push r1 main 
+  222  git status
+  223  git push
+  224  git diff r1 
+  225  git help diff
+  226  git branch
+  227  git diff main r1/main 
+  228  git branch
+  229  git diff main r1/main 
+  230  git add .
+  231  git commit -m "Final Commit"
+  232  git diff main r1/main 
+  233  git push r1 main 
+  234  git help diff
+  235  git log
+  236  git help reset
+  237  git reset 3ff1825d2146e3904f38dea6f418292812b15bd0
+  238  git checkout 3ff1825d2146e3904f38dea6f418292812b15bd0 java_file_1.java t1.txt 
+  239  git add .
+  240  git commit -m "Commit After Checkout To Get Deleted File"
+  241  git status
+  242  git checkout main 
+  243  git push r1 main 
+  244  git help fetch
+  245  git add .
+  246  git commit -m 
+  247  git push r1 main 
+  248  git checkout main
+  249  git commit -m "Commit After Checkout To Get Deleted File"
+  250  git status
+  251  ls
+  252  git status
+  253  git log --oneline
+  254  git push r1 origin/HEAD 
+  255  git push r1 origin/main 
+  256  git branch
+  257  git branch -a
+  258  git remote remove origin  
+  259  git branch -a
+  260  git push r1 main
+  261  git push r1 main -f
+  262  ls
+  263  git status
