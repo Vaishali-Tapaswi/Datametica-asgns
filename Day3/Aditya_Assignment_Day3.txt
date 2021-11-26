@@ -1,0 +1,535 @@
+Firstly created three text files and then the following commands on terminal
+
+
+
+[aditya.phate@DM1394 Day3_Assign]$ touch a1.java a2.java
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	a1.java
+	a2.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[aditya.phate@DM1394 Day3_Assign]$ git add *.java
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   a1.java
+	new file:   a2.java
+
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "First Commit"
+[main 9e7188f] First Commit
+ Committer: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1.java
+ create mode 100644 a2.java
+[aditya.phate@DM1394 Day3_Assign]$ git branch
+* main
+[aditya.phate@DM1394 Day3_Assign]$ git branch -M master
+[aditya.phate@DM1394 Day3_Assign]$ git branch
+* master
+[aditya.phate@DM1394 Day3_Assign]$ git branch -M main
+[aditya.phate@DM1394 Day3_Assign]$ git remote add Day3 https://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@github.com/adityaphate/Day3_Assign.git
+[aditya.phate@DM1394 Day3_Assign]$ git push Day3 main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/adityaphate/Day3_Assign.git
+   2cdf310..9e7188f  main -> main
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "First Commit"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   a1.java
+
+no changes added to commit
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git add a1.java
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "First Commit"
+[main 8526e66] First Commit
+ Committer: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   a2.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git add a2.java
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "Second Commit"
+[main 976496c] Second Commit
+ Committer: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ git log
+commit 976496cb397e9f597914c8b7bc8fba236b2e1360 (HEAD -> main)
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:01:00 2021 +0530
+
+    Second Commit
+
+commit 8526e6617a042a94104607b5b651279057ee5cae
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 14:59:27 2021 +0530
+
+    First Commit
+
+commit 9e7188fcb9cb137b62569ec08198773442149024 (Day3/main)
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 14:31:09 2021 +0530
+
+    First Commit
+
+commit 2cdf31040e5894dff3b1f915b8a4759879e111e4 (origin/main, origin/HEAD)
+Author: adityaphate <94887225+adityaphate@users.noreply.github.com>
+Date:   Thu Nov 25 14:27:27 2021 +0530
+
+    Third file
+
+
+[1]+  Stopped                 git log
+[aditya.phate@DM1394 Day3_Assign]$ git diff 976496cb397e9f597914c8b7bc8fba236b2e1360 8526e6617a042a94104607b5b651279057ee5cae
+diff --git a/a2.java b/a2.java
+index 1619f7d..e69de29 100644
+--- a/a2.java
++++ b/a2.java
+@@ -1 +0,0 @@
+-THIS IS 2ND CHANGE
+[aditya.phate@DM1394 Day3_Assign]$ git diff 8526e6617a042a94104607b5b651279057ee5cae
+diff --git a/a2.java b/a2.java
+index e69de29..1619f7d 100644
+--- a/a2.java
++++ b/a2.java
+@@ -0,0 +1 @@
++THIS IS 2ND CHANGE
+[aditya.phate@DM1394 Day3_Assign]$ git add a1.java
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "removed dot"
+[main fd37057] removed dot
+ Committer: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git add a1.java
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "Add "
+[main 653cb87] Add
+ Committer: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[aditya.phate@DM1394 Day3_Assign]$ git log
+commit 653cb872f14c0b5e79fc59d3352f5a5f238e385a (HEAD -> main)
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:07:51 2021 +0530
+
+    Add
+
+commit fd37057435a679847bbaf3809bbbc88bb080f911
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:06:55 2021 +0530
+
+    removed dot
+
+commit 976496cb397e9f597914c8b7bc8fba236b2e1360
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:01:00 2021 +0530
+
+    Second Commit
+
+commit 8526e6617a042a94104607b5b651279057ee5cae
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 14:59:27 2021 +0530
+
+    First Commit
+[aditya.phate@DM1394 Day3_Assign]$ git diff fd37057435a679847bbaf3809bbbc88bb080f911
+diff --git a/a1.java b/a1.java
+index 1347804..f6fa275 100644
+--- a/a1.java
++++ b/a1.java
+@@ -1 +1 @@
+-HI THIS IS BEFORE ANY COMMIT
++HI THIS IS BEFORE ANY COMMIT-
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    T1.txt
+	deleted:    a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git rm a1.java
+rm 'a1.java'
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    a1.java
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    T1.txt
+
+[aditya.phate@DM1394 Day3_Assign]$ git rm T1.txt
+rm 'T1.txt'
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    T1.txt
+	deleted:    a1.java
+
+[aditya.phate@DM1394 Day3_Assign]$ git commit -m "Deleted 2 files"
+[main ff985fe] Deleted 2 files
+ Committer: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 deletions(-)
+ delete mode 100644 T1.txt
+ delete mode 100644 a1.java
+[aditya.phate@DM1394 Day3_Assign]$ git push 
+Day3     origin   
+[aditya.phate@DM1394 Day3_Assign]$ git push 
+Day3     origin   
+[aditya.phate@DM1394 Day3_Assign]$ git push Day3
+Enumerating objects: 17, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 1.27 KiB | 1.27 MiB/s, done.
+Total 14 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/adityaphate/Day3_Assign.git
+   9e7188f..ff985fe  main -> main
+[aditya.phate@DM1394 Day3_Assign]$ git reset
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ git reset
+[aditya.phate@DM1394 Day3_Assign]$ git log
+commit ff985fe4528b7762c7136fb222d85f70cc95de96 (HEAD -> main, Day3/main)
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:19:18 2021 +0530
+
+    Deleted 2 files
+
+commit 653cb872f14c0b5e79fc59d3352f5a5f238e385a
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:07:51 2021 +0530
+
+    Add
+
+commit fd37057435a679847bbaf3809bbbc88bb080f911
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:06:55 2021 +0530
+
+    removed dot
+
+commit 976496cb397e9f597914c8b7bc8fba236b2e1360
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:01:00 2021 +0530
+
+    Second Commit
+[aditya.phate@DM1394 Day3_Assign]$ git reset ff985fe4528b7762c7136fb222d85f70cc95de96 
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ git status 653cb872f14c0b5e79fc59d3352f5a5f238e385a
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ git reset 653cb872f14c0b5e79fc59d3352f5a5f238e385a
+Unstaged changes after reset:
+D	T1.txt
+D	a1.java
+[aditya.phate@DM1394 Day3_Assign]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    T1.txt
+	deleted:    a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git checkout 653cb872f14c0b5e79fc59d3352f5a5f238e385a
+D	T1.txt
+D	a1.java
+Note: checking out '653cb872f14c0b5e79fc59d3352f5a5f238e385a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 653cb87 Add
+[aditya.phate@DM1394 Day3_Assign]$ git status
+HEAD detached at 653cb87
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    T1.txt
+	deleted:    a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git log
+commit 653cb872f14c0b5e79fc59d3352f5a5f238e385a (HEAD, main)
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:07:51 2021 +0530
+
+    Add
+
+commit fd37057435a679847bbaf3809bbbc88bb080f911
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:06:55 2021 +0530
+
+    removed dot
+
+commit 976496cb397e9f597914c8b7bc8fba236b2e1360
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:01:00 2021 +0530
+
+    Second Commit
+
+commit 8526e6617a042a94104607b5b651279057ee5cae
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 14:59:27 2021 +0530
+
+    First Commit
+[aditya.phate@DM1394 Day3_Assign]$ git checkout 653cb872f14c0b5e79fc59d3352f5a5f238e385a
+D	T1.txt
+D	a1.java
+HEAD is now at 653cb87 Add
+[aditya.phate@DM1394 Day3_Assign]$ git status
+HEAD detached at 653cb87
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    T1.txt
+	deleted:    a1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[aditya.phate@DM1394 Day3_Assign]$ git checkout 653cb872f14c0b5e79fc59d3352f5a5f238e385a T1.txt a1.java
+Updated 2 paths from 0b33080
+[aditya.phate@DM1394 Day3_Assign]$ git status
+HEAD detached at 653cb87
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ git log
+commit 653cb872f14c0b5e79fc59d3352f5a5f238e385a (HEAD, main)
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:07:51 2021 +0530
+
+    Add
+
+commit fd37057435a679847bbaf3809bbbc88bb080f911
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:06:55 2021 +0530
+
+    removed dot
+
+commit 976496cb397e9f597914c8b7bc8fba236b2e1360
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 15:01:00 2021 +0530
+
+    Second Commit
+
+commit 8526e6617a042a94104607b5b651279057ee5cae
+Author: Aditya Phate <aditya.phate@DM1394.datametica.com>
+Date:   Thu Nov 25 14:59:27 2021 +0530
+
+    First Commit
+[aditya.phate@DM1394 Day3_Assign]$ git push Day3
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push Day3 HEAD:<name-of-remote-branch>
+
+[aditya.phate@DM1394 Day3_Assign]$ git branch
+* (HEAD detached at 653cb87)
+  main
+[aditya.phate@DM1394 Day3_Assign]$ git push Day3 main
+To https://github.com/adityaphate/Day3_Assign.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://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@github.com/adityaphate/Day3_Assign.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[aditya.phate@DM1394 Day3_Assign]$ git push Day3 master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://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@github.com/adityaphate/Day3_Assign.git'
+[aditya.phate@DM1394 Day3_Assign]$ git push 
+Day3     origin   
+[aditya.phate@DM1394 Day3_Assign]$ git push Day3 main
+To https://github.com/adityaphate/Day3_Assign.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://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@github.com/adityaphate/Day3_Assign.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[aditya.phate@DM1394 Day3_Assign]$ git push -f Day3 main 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/adityaphate/Day3_Assign.git
+ + ff985fe...653cb87 main -> main (forced update)
+[aditya.phate@DM1394 Day3_Assign]$ git status
+HEAD detached at 653cb87
+nothing to commit, working tree clean
+[aditya.phate@DM1394 Day3_Assign]$ 
+
