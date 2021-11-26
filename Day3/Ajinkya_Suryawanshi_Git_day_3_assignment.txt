@@ -1,0 +1,895 @@
+[ajinkya.s@DM1370 day3]$ cd ..
+[ajinkya.s@DM1370 Git]$ git clone https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+Cloning into 'Day3Lab'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 15 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+[ajinkya.s@DM1370 Git]$ git status
+fatal: not a git repository (or any of the parent directories): .git
+[ajinkya.s@DM1370 Git]$ git init
+Initialized empty Git repository in /home/ajinkya.s/Git/.git/
+[ajinkya.s@DM1370 Git]$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Day3Lab/
+	datatmp/
+	day3/
+	temp/
+	temp1/
+	temp2/
+	tmp/
+	vabs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ajinkya.s@DM1370 Git]$ cd Day3Lab/
+[ajinkya.s@DM1370 Day3Lab]$ ls
+ArrayListDemo.java  LinkedHashSetDemo.java  text2.txt  text4.txt
+HashSetDemo.java    text1.txt               text3.txt  text5.txt
+[ajinkya.s@DM1370 Day3Lab]$ git init
+Reinitialized existing Git repository in /home/ajinkya.s/Git/Day3Lab/.git/
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ArrayListDemo.java
+	HashSetDemo.java
+	LinkedHashSetDemo.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ajinkya.s@DM1370 Day3Lab]$ git add *.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ArrayListDemo.java
+	new file:   HashSetDemo.java
+	new file:   LinkedHashSetDemo.java
+
+[ajinkya.s@DM1370 Day3Lab]$ git commit -m "add java files"
+[main fc20c8b] add java files
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 112 insertions(+)
+ create mode 100644 ArrayListDemo.java
+ create mode 100644 HashSetDemo.java
+ create mode 100644 LinkedHashSetDemo.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git remote add day3 https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+[ajinkya.s@DM1370 Day3Lab]$ git remote
+day3
+origin
+[ajinkya.s@DM1370 Day3Lab]$ git push day3 master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/AjinkyaSuryawanshi21/Day3Lab.git'
+[ajinkya.s@DM1370 Day3Lab]$ git branch
+* main
+[ajinkya.s@DM1370 Day3Lab]$ git push day3 main
+Username for 'https://github.com': AjinkyaSuryawanshi21
+Password for 'https://AjinkyaSuryawanshi21@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.45 KiB | 742.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+   58491ff..fc20c8b  main -> main
+[ajinkya.s@DM1370 Day3Lab]$ touch doc1.doc 
+[ajinkya.s@DM1370 Day3Lab]$ touch doc2.doc 
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	doc1.doc
+	doc2.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ajinkya.s@DM1370 Day3Lab]$ touch .gitignore
+[ajinkya.s@DM1370 Day3Lab]$ ls
+ArrayListDemo.java  HashSetDemo.java        text2.txt  text5.txt
+doc1.doc            LinkedHashSetDemo.java  text3.txt
+doc2.doc            text1.txt               text4.txt
+[ajinkya.s@DM1370 Day3Lab]$ ls -a
+.                   doc1.doc  .gitignore              text1.txt  text4.txt
+..                  doc2.doc  HashSetDemo.java        text2.txt  text5.txt
+ArrayListDemo.java  .git      LinkedHashSetDemo.java  text3.txt
+[ajinkya.s@DM1370 Day3Lab]$ vs .gitignore
+bash: vs: command not found...
+^C  
+[ajinkya.s@DM1370 Day3Lab]$ vi .gitignore
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ajinkya.s@DM1370 Day3Lab]$ git add .gitignore
+[ajinkya.s@DM1370 Day3Lab]$ git commit -m "add .gitignore"
+[main d1a6314] add .gitignore
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ gedit ^C
+[ajinkya.s@DM1370 Day3Lab]$ gedit ArrayListDemo.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ArrayListDemo.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ajinkya.s@DM1370 Day3Lab]$ git commit -a -m "Modify ArrayListDemo.java"
+[main e881893] Modify ArrayListDemo.java
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git log
+commit e881893a513c603f06ee1414807b747fc7d56013 (HEAD -> main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:05:26 2021 +0530
+
+    Modify ArrayListDemo.java
+
+commit d1a6314cb079526672d1da63b7e17cf766c977eb
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:59:10 2021 +0530
+
+    add .gitignore
+
+commit fc20c8b77bb196c073827abbe0fe41672e4727ba (day3/main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:49:16 2021 +0530
+
+    add java files
+
+commit 58491ffe6ff4f310d26e5eeeaec876106b6a16b5 (origin/main, origin/HEAD)
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:40 2021 +0530
+
+    Create text5.txt
+
+commit dffdcc267ad96603e195793319d6d952f6f317dd
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:05 2021 +0530
+
+    Create text4.txt
+
+commit 80f1cd9103185d60bae0b99f197267b61ca44673
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:31:34 2021 +0530
+
+    Create text3.txt
+
+commit d888d13cf88ba5beee3410b4d0644bd99cf1cf9f
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:30:56 2021 +0530
+
+    Create text2.txt
+
+commit 856051e0f5fe8ad83c5de914a93f77a8521f435c
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:30:31 2021 +0530
+
+    Create text1.txt
+
+[1]+  Stopped                 git log
+[ajinkya.s@DM1370 Day3Lab]$ git diff e881893a513c603f06ee1414807b747fc7d56013 d1a6314cb079526672d1da63b7e17cf766c977eb
+diff --git a/ArrayListDemo.java b/ArrayListDemo.java
+index 4b7600e..1760a03 100644
+--- a/ArrayListDemo.java
++++ b/ArrayListDemo.java
+@@ -13,7 +13,7 @@ public class ArrayListDemo {
+         //AutoBoxing
+         list.add(28);
+         list.add(40.5);
+-        list.add("Hey there");
++        list.add("Hi");
+ 
+         //Adding elements using Student Class Constructor
+         list.add(new Student(101, "Ajinkya", 90));
+[ajinkya.s@DM1370 Day3Lab]$ ^C
+[ajinkya.s@DM1370 Day3Lab]$ git diff e881893a513c603f06ee1414807b747fc7d56013 
+[ajinkya.s@DM1370 Day3Lab]$ git diff d1a6314cb079526672d1da63b7e17cf766c977eb
+diff --git a/ArrayListDemo.java b/ArrayListDemo.java
+index 1760a03..4b7600e 100644
+--- a/ArrayListDemo.java
++++ b/ArrayListDemo.java
+@@ -13,7 +13,7 @@ public class ArrayListDemo {
+         //AutoBoxing
+         list.add(28);
+         list.add(40.5);
+-        list.add("Hi");
++        list.add("Hey there");
+ 
+         //Adding elements using Student Class Constructor
+         list.add(new Student(101, "Ajinkya", 90));
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git rm ArrayListDemo.java
+rm 'ArrayListDemo.java'
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    ArrayListDemo.java
+
+[ajinkya.s@DM1370 Day3Lab]$ git commit -m "Delete ArrayListDemo.java"
+[main 904641d] Delete ArrayListDemo.java
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 49 deletions(-)
+ delete mode 100644 ArrayListDemo.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git log
+commit 904641d8e530c708c0c42d04fcff19282505257d (HEAD -> main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:16:19 2021 +0530
+
+    Delete ArrayListDemo.java
+
+commit e881893a513c603f06ee1414807b747fc7d56013
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:05:26 2021 +0530
+
+    Modify ArrayListDemo.java
+
+commit d1a6314cb079526672d1da63b7e17cf766c977eb
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:59:10 2021 +0530
+
+    add .gitignore
+
+commit fc20c8b77bb196c073827abbe0fe41672e4727ba (day3/main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:49:16 2021 +0530
+
+    add java files
+
+commit 58491ffe6ff4f310d26e5eeeaec876106b6a16b5 (origin/main, origin/HEAD)
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:40 2021 +0530
+
+    Create text5.txt
+
+commit dffdcc267ad96603e195793319d6d952f6f317dd
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:05 2021 +0530
+
+    Create text4.txt
+
+commit 80f1cd9103185d60bae0b99f197267b61ca44673
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:31:34 2021 +0530
+
+    Create text3.txt
+
+commit d888d13cf88ba5beee3410b4d0644bd99cf1cf9f
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:30:56 2021 +0530
+
+    Create text2.txt
+
+commit 856051e0f5fe8ad83c5de914a93f77a8521f435c
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:30:31 2021 +0530
+
+    Create text1.txt
+
+[2]+  Stopped                 git log
+[ajinkya.s@DM1370 Day3Lab]$ git push day3 main
+Username for 'https://github.com': AjinkyaSuryawanshi21
+Password for 'https://AjinkyaSuryawanshi21@github.com': 
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 838 bytes | 838.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+   fc20c8b..904641d  main -> main
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ProductComparator.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ajinkya.s@DM1370 Day3Lab]$ git commit -a -m "Add ProductComparator.java"
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+	ProductComparator.java
+
+nothing added to commit but untracked files present
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ProductComparator.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ajinkya.s@DM1370 Day3Lab]$ git add ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ProductComparator.java
+
+[ajinkya.s@DM1370 Day3Lab]$ git commit -m "Add ProductComparator.java"
+[main 5fb5d1a] Add ProductComparator.java
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 insertions(+)
+ create mode 100644 ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git log
+commit 5fb5d1a05b6d835fef763c3ed85782e0ad067418 (HEAD -> main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:21:33 2021 +0530
+
+    Add ProductComparator.java
+
+commit 904641d8e530c708c0c42d04fcff19282505257d (day3/main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:16:19 2021 +0530
+
+    Delete ArrayListDemo.java
+
+commit e881893a513c603f06ee1414807b747fc7d56013
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:05:26 2021 +0530
+
+    Modify ArrayListDemo.java
+
+commit d1a6314cb079526672d1da63b7e17cf766c977eb
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:59:10 2021 +0530
+
+    add .gitignore
+
+commit fc20c8b77bb196c073827abbe0fe41672e4727ba
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:49:16 2021 +0530
+
+    add java files
+
+commit 58491ffe6ff4f310d26e5eeeaec876106b6a16b5 (origin/main, origin/HEAD)
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:40 2021 +0530
+
+    Create text5.txt
+
+commit dffdcc267ad96603e195793319d6d952f6f317dd
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:05 2021 +0530
+
+    Create text4.txt
+
+commit 80f1cd9103185d60bae0b99f197267b61ca44673
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:31:34 2021 +0530
+
+    Create text3.txt
+
+commit d888d13cf88ba5beee3410b4d0644bd99cf1cf9f
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:30:56 2021 +0530
+
+    Create text2.txt
+
+commit 856051e0f5fe8ad83c5de914a93f77a8521f435c
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:30:31 2021 +0530
+
+    Create text1.txt
+
+[3]+  Stopped                 git log
+[ajinkya.s@DM1370 Day3Lab]$ git dif 5fb5d1a05b6d835fef763c3ed85782e0ad067418 904641d8e530c708c0c42d04fcff19282505257d
+git: 'dif' is not a git command. See 'git --help'.
+
+The most similar commands are
+	diff
+	config
+	difftool
+	init
+[ajinkya.s@DM1370 Day3Lab]$ git diff 5fb5d1a05b6d835fef763c3ed85782e0ad067418 904641d8e530c708c0c42d04fcff19282505257d
+diff --git a/ProductComparator.java b/ProductComparator.java
+deleted file mode 100644
+index 52f0fe6..0000000
+--- a/ProductComparator.java
++++ /dev/null
+@@ -1,9 +0,0 @@
+-package collections;
+-
+-import java.util.Comparator;
+-
+-public class ProductComparator implements Comparator<Product> {
+-    public int compare(Product p1, Product p2) {
+-            return p1.getPid() - p2.getPid();
+-    }
+-}
+[ajinkya.s@DM1370 Day3Lab]$ git diff e881893a513c603f06ee1414807b747fc7d56013 d1a6314cb079526672d1da63b7e17cf766c977eb
+diff --git a/ArrayListDemo.java b/ArrayListDemo.java
+index 4b7600e..1760a03 100644
+--- a/ArrayListDemo.java
++++ b/ArrayListDemo.java
+@@ -13,7 +13,7 @@ public class ArrayListDemo {
+         //AutoBoxing
+         list.add(28);
+         list.add(40.5);
+-        list.add("Hey there");
++        list.add("Hi");
+ 
+         //Adding elements using Student Class Constructor
+         list.add(new Student(101, "Ajinkya", 90));
+[ajinkya.s@DM1370 Day3Lab]$ git checkout branch1
+error: pathspec 'branch1' did not match any file(s) known to git
+[ajinkya.s@DM1370 Day3Lab]$ git branch branch1
+[ajinkya.s@DM1370 Day3Lab]$ git branch
+  branch1
+* main
+[ajinkya.s@DM1370 Day3Lab]$ git checkout branch1
+Switched to branch 'branch1'
+[ajinkya.s@DM1370 Day3Lab]$ git branch
+* branch1
+  main
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch branch1
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ ls
+doc1.doc          LinkedHashSetDemo.java  text2.txt  text5.txt
+doc2.doc          ProductComparator.java  text3.txt
+HashSetDemo.java  text1.txt               text4.txt
+[ajinkya.s@DM1370 Day3Lab]$ gedit ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch branch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ProductComparator.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ajinkya.s@DM1370 Day3Lab]$ git commit -a -m "Update ProductComparator.java"
+[branch1 0972955] Update ProductComparator.java
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch branch1
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git diff main branch1
+diff --git a/ProductComparator.java b/ProductComparator.java
+index 52f0fe6..8d80a69 100644
+--- a/ProductComparator.java
++++ b/ProductComparator.java
+@@ -2,6 +2,7 @@ package collections;
+ 
+ import java.util.Comparator;
+ 
++//This it the Product Comparator file
+ public class ProductComparator implements Comparator<Product> {
+     public int compare(Product p1, Product p2) {
+             return p1.getPid() - p2.getPid();
+[ajinkya.s@DM1370 Day3Lab]$ git log
+commit 097295509887a58d165044a4b37e57c2cdaea7fe (HEAD -> branch1)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:43:10 2021 +0530
+
+    Update ProductComparator.java
+
+commit 5fb5d1a05b6d835fef763c3ed85782e0ad067418 (main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:21:33 2021 +0530
+
+    Add ProductComparator.java
+
+commit 904641d8e530c708c0c42d04fcff19282505257d (day3/main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:16:19 2021 +0530
+
+    Delete ArrayListDemo.java
+
+commit e881893a513c603f06ee1414807b747fc7d56013
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:05:26 2021 +0530
+
+    Modify ArrayListDemo.java
+
+commit d1a6314cb079526672d1da63b7e17cf766c977eb
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:59:10 2021 +0530
+
+    add .gitignore
+
+commit fc20c8b77bb196c073827abbe0fe41672e4727ba
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:49:16 2021 +0530
+
+    add java files
+
+commit 58491ffe6ff4f310d26e5eeeaec876106b6a16b5 (origin/main, origin/HEAD)
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+[ajinkya.s@DM1370 Day3Lab]$ git diff --staged
+[ajinkya.s@DM1370 Day3Lab]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git diff --staged
+[ajinkya.s@DM1370 Day3Lab]$ git diff ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ git checkout branch1
+Switched to branch 'branch1'
+[ajinkya.s@DM1370 Day3Lab]$ git diff ProuductComparator.java
+fatal: ambiguous argument 'ProuductComparator.java': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ajinkya.s@DM1370 Day3Lab]$ git diff ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch branch1
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git log
+commit 5fb5d1a05b6d835fef763c3ed85782e0ad067418 (HEAD -> main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:21:33 2021 +0530
+
+    Add ProductComparator.java
+
+commit 904641d8e530c708c0c42d04fcff19282505257d (day3/main)
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:16:19 2021 +0530
+
+    Delete ArrayListDemo.java
+
+commit e881893a513c603f06ee1414807b747fc7d56013
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 15:05:26 2021 +0530
+
+    Modify ArrayListDemo.java
+
+commit d1a6314cb079526672d1da63b7e17cf766c977eb
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:59:10 2021 +0530
+
+    add .gitignore
+
+commit fc20c8b77bb196c073827abbe0fe41672e4727ba
+Author: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Date:   Thu Nov 25 14:49:16 2021 +0530
+
+    add java files
+
+commit 58491ffe6ff4f310d26e5eeeaec876106b6a16b5 (origin/main, origin/HEAD)
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:40 2021 +0530
+
+    Create text5.txt
+
+commit dffdcc267ad96603e195793319d6d952f6f317dd
+Author: AjinkyaSuryawanshi21 <94887312+AjinkyaSuryawanshi21@users.noreply.gith[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ProductComparator.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ajinkya.s@DM1370 Day3Lab]$ git checkout ProductComparator.java
+Updated 1 path from the index
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git push day3 main
+Username for 'https://github.com': AjinkyaSuryawanshi21
+Password for 'https://AjinkyaSuryawanshi21@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 445.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+   904641d..5fb5d1a  main -> main
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git branch
+  branch1
+* main
+[ajinkya.s@DM1370 Day3Lab]$ git checkout branch1
+Switched to branch 'branch1'
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch branch1
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ProductComparator.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ajinkya.s@DM1370 Day3Lab]$ git rm ProductComparator.java
+rm 'ProductComparator.java'
+[ajinkya.s@DM1370 Day3Lab]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    ProductComparator.java
+
+[ajinkya.s@DM1370 Day3Lab]$ git commit -m "Delete ProductComparator.java"
+[main ca97810] Delete ProductComparator.java
+ Committer: Ajinkya Suryawanshi <ajinkya.s@DM1370.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 deletions(-)
+ delete mode 100644 ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ git pull https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+From https://github.com/AjinkyaSuryawanshi21/Day3Lab
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+[ajinkya.s@DM1370 Day3Lab]$ git FETCH_HEAD https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+git: 'FETCH_HEAD' is not a git command. See 'git --help'.
+[ajinkya.s@DM1370 Day3Lab]$ git pull https://github.com/AjinkyaSuryawanshi21/Day3Lab.git main
+From https://github.com/AjinkyaSuryawanshi21/Day3Lab
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[ajinkya.s@DM1370 Day3Lab]$ git fetch https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+From https://github.com/AjinkyaSuryawanshi21/Day3Lab
+ * branch            HEAD       -> FETCH_HEAD
+[ajinkya.s@DM1370 Day3Lab]$ FETCH_HEAD
+bash: FETCH_HEAD: command not found...
+FETCH[ajinkya.s@DM1370 Day3Lab]$ FETCH_HEAD https://github.com/AjinkyaSuryawanshi21/Day3Lab.git
+bash: FETCH_HEAD: command not found...
+[ajinkya.s@DM1370 Day3Lab]$ git reset --hard https://github.com/AjinkyaSuryawanshi21/Day3Lab.git main
+fatal: Invalid object name 'https'.
+[ajinkya.s@DM1370 Day3Lab]$ git reset --hard day3  main
+fatal: ambiguous argument 'day3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ajinkya.s@DM1370 Day3Lab]$ git reset --hard day3
+fatal: ambiguous argument 'day3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ajinkya.s@DM1370 Day3Lab]$ git reset --hard orogin main
+fatal: ambiguous argument 'orogin': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[ajinkya.s@DM1370 Day3Lab]$ git reset --hard origin main
+fatal: Cannot do hard reset with paths.
+[ajinkya.s@DM1370 Day3Lab]$ git reset --hard day3/main
+HEAD is now at 5fb5d1a Add ProductComparator.java
+[ajinkya.s@DM1370 Day3Lab]$ ls
+doc1.doc          LinkedHashSetDemo.java  text2.txt  text5.txt
+doc2.doc          ProductComparator.java  text3.txt
+HashSetDemo.java  text1.txt               text4.txt
+[ajinkya.s@DM1370 Day3Lab]$ 
