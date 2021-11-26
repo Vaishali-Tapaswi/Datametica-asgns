@@ -1,0 +1,1294 @@
+[abhishek.agarwal@DM1383 day3_local]$ cd ../
+[abhishek.agarwal@DM1383 git]$ ls
+Cloning_Fold  datatmp  day3_local  developer1  developer2
+[abhishek.agarwal@DM1383 git]$ mkdir day3_dummy
+[abhishek.agarwal@DM1383 git]$ ls
+Cloning_Fold  datatmp  day3_dummy  day3_local  developer1  developer2
+[abhishek.agarwal@DM1383 git]$ cd day3_dummy/
+[abhishek.agarwal@DM1383 day3_dummy]$ git init
+Initialized empty Git repository in /home/abhishek.agarwal/Documents/git/day3_dummy/.git/
+[abhishek.agarwal@DM1383 day3_dummy]$ git pull https://github.com/abhishekagarwal0426/day3_final.git
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 14 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+From https://github.com/abhishekagarwal0426/day3_final
+ * branch            HEAD       -> FETCH_HEAD
+[abhishek.agarwal@DM1383 day3_dummy]$ ls
+README.md  t1.txt  t2.txt  t3.txt  t4.txt  t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.  ..  .git  README.md  t1.txt  t2.txt  t3.txt  t4.txt  t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ touch t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ touch t2.java
+[abhishek.agarwal@DM1383 day3_dummy]$ touch t3.java
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ cat t1.java 
+print("Hello")
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t2.java
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t3.java
+[abhishek.agarwal@DM1383 day3_dummy]$ cat t2.java 
+print("Hello")
+
+[abhishek.agarwal@DM1383 day3_dummy]$ cat t3.java 
+print("Hello")
+
+[abhishek.agarwal@DM1383 day3_dummy]$ touch f1.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ touch f2.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi f1.txt 
+[abhishek.agarwal@DM1383 day3_dummy]$ cat f1.txt 
+Welcome
+[abhishek.agarwal@DM1383 day3_dummy]$ vi f2.txt 
+[abhishek.agarwal@DM1383 day3_dummy]$ cat f2.txt 
+To the world
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	f1.txt
+	f2.txt
+	t1.java
+	t2.java
+	t3.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[abhishek.agarwal@DM1383 day3_dummy]$ ls 
+f1.txt  f2.txt  README.md  t1.java  t1.txt  t2.java  t2.txt  t3.java  t3.txt  t4.txt  t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ touch .gitignore
+[abhishek.agarwal@DM1383 day3_dummy]$ vi .
+./          ../         .git/       .gitignore  
+[abhishek.agarwal@DM1383 day3_dummy]$ vi .gitignore 
+[abhishek.agarwal@DM1383 day3_dummy]$ vi .gitignore 
+[abhishek.agarwal@DM1383 day3_dummy]$ cat .gitignore 
+f1.txt
+f2.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ touch t3.doc
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	t1.java
+	t2.java
+	t3.doc
+	t3.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[abhishek.agarwal@DM1383 day3_dummy]$ git add .
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   t1.java
+	new file:   t2.java
+	new file:   t3.doc
+	new file:   t3.java
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -m "first commit with all files"
+[master 437fd01] first commit with all files
+ Committer: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 7 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 t1.java
+ create mode 100644 t2.java
+ create mode 100644 t3.doc
+ create mode 100644 t3.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git log
+commit 437fd01dc851c170c178920c79efd99dcff16cc4 (HEAD -> master)
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:12:39 2021 +0530
+
+    first commit with all files
+
+commit 6c856586cdf0e85f69edafc646720551c4fb55b7
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:47 2021 +0530
+
+    Create t5.txt
+
+commit 2ae4c57a8c73a7b49854a07014d628648cdf7769
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:30 2021 +0530
+
+    Create t4.txt
+
+commit 892bc8703166dc7fc1d34f6947d2f3b17dad21cf
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:16 2021 +0530
+
+    Create t3.txt
+
+commit 90128b8621bc402130dc17597e3f8df1b51ff8f9
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:02 2021 +0530
+
+    Create t2.txt
+
+commit 2615317ff2bcb77cf0b28af8923a01a0fdd6484c
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:02:46 2021 +0530
+
+    Create t1.txt
+
+commit bdb64a92b502f69c72ce422d0042eaa58ac2c523
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:02:20 2021 +0530
+
+[1]+  Stopped                 git log
+[abhishek.agarwal@DM1383 day3_dummy]$ cat t1.java 
+print("Hello")
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git add t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -m "first modified t1.java file" t1.java 
+[master 4f2689d] first modified t1.java file
+ Committer: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   t1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[abhishek.agarwal@DM1383 day3_dummy]$ git add t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -m "modified t1.java added new word" 
+[master 35ba19d] modified t1.java added new word
+ Committer: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ rm t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff t1.java
+fatal: ambiguous argument 't1.java': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[abhishek.agarwal@DM1383 day3_dummy]$ git log
+commit 35ba19df3849187583552eb929d40c4f2813e28e (HEAD -> master)
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:16:37 2021 +0530
+
+    modified t1.java added new word
+
+commit 4f2689db4a9337bdce8c36910edf53c553cd4624
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:15:03 2021 +0530
+
+    first modified t1.java file
+
+commit 437fd01dc851c170c178920c79efd99dcff16cc4
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:12:39 2021 +0530
+
+    first commit with all files
+
+commit 6c856586cdf0e85f69edafc646720551c4fb55b7
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:47 2021 +0530
+
+    Create t5.txt
+
+commit 2ae4c57a8c73a7b49854a07014d628648cdf7769
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:30 2021 +0530
+
+    Create t4.txt
+
+commit 892bc8703166dc7fc1d34f6947d2f3b17dad21cf
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:16 2021 +0530
+
+    Create t3.txt
+
+commit 90128b8621bc402130dc17597e3f8df1b51ff8f9
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:02 2021 +0530
+
+[2]+  Stopped                 git log
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout 35ba19df38 --t1.java
+error: unknown option `t1.java'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --no-guess            do not second guess 'git checkout <no-such-branch>'
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout 35ba19df38 -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff --staged
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 437fd01dc --t1.java
+usage: git diff [<options>] [<commit> [<commit>]] [--] [<path>...]
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff --cached
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff HAED
+fatal: ambiguous argument 'HAED': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff HEAD
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff HEAD^ HEAD
+diff --git a/t1.java b/t1.java
+index 92f84d7..673f630 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1,2 +1,3 @@
+-print("Hello")
++print("Hello World")
+ print("Added new Line")
++
+[abhishek.agarwal@DM1383 day3_dummy]$ git-diff-index --cached 437fd01dc
+bash: git-diff-index: command not found...
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 437fd01dc.master 
+fatal: ambiguous argument '437fd01dc.master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 437fd01dc..master 
+diff --git a/t1.java b/t1.java
+index 2f9a147..673f630 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1 +1,3 @@
+-print("Hello")
++print("Hello World")
++print("Added new Line")
++
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 437fd01dc...master 
+diff --git a/t1.java b/t1.java
+index 2f9a147..673f630 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1 +1,3 @@
+-print("Hello")
++print("Hello World")
++print("Added new Line")
++
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 4f2689db...master 
+diff --git a/t1.java b/t1.java
+index 92f84d7..673f630 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1,2 +1,3 @@
+-print("Hello")
++print("Hello World")
+ print("Added new Line")
++
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 4f2689db..master 
+diff --git a/t1.java b/t1.java
+index 92f84d7..673f630 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1,2 +1,3 @@
+-print("Hello")
++print("Hello World")
+ print("Added new Line")
++
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 4f2689db..437fd01dc 
+diff --git a/t1.java b/t1.java
+index 92f84d7..2f9a147 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1,2 +1 @@
+ print("Hello")
+-print("Added new Line")
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff 437fd01dc..4f2689db
+diff --git a/t1.java b/t1.java
+index 2f9a147..92f84d7 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1 +1,2 @@
+ print("Hello")
++print("Added new Line")
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git diff
+diff --git a/t1.java b/t1.java
+index 673f630..80c566b 100644
+--- a/t1.java
++++ b/t1.java
+@@ -1,3 +1,3 @@
+ print("Hello World")
+ print("Added new Line")
+-
++Print("Add to staging area and found git diff")
+[abhishek.agarwal@DM1383 day3_dummy]$ git add .
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -m  "commit after checking diff bet local and staging"
+[master a00c8fa] commit after checking diff bet local and staging
+ Committer: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[abhishek.agarwal@DM1383 day3_dummy]$ git log
+commit a00c8faf210c9a1ab3c250ab57b6ab2dd72d67f2 (HEAD -> master)
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:30:21 2021 +0530
+
+    commit after checking diff bet local and staging
+
+commit 35ba19df3849187583552eb929d40c4f2813e28e
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:16:37 2021 +0530
+
+    modified t1.java added new word
+
+commit 4f2689db4a9337bdce8c36910edf53c553cd4624
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:15:03 2021 +0530
+
+    first modified t1.java file
+
+commit 437fd01dc851c170c178920c79efd99dcff16cc4
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:12:39 2021 +0530
+
+    first commit with all files
+
+commit 6c856586cdf0e85f69edafc646720551c4fb55b7
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:47 2021 +0530
+
+    Create t5.txt
+
+commit 2ae4c57a8c73a7b49854a07014d628648cdf7769
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:30 2021 +0530
+
+    Create t4.txt
+
+commit 892bc8703166dc7fc1d34f6947d2f3b17dad21cf
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:16 2021 +0530
+
+[3]+  Stopped                 git log
+[abhishek.agarwal@DM1383 day3_dummy]$ rm t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git statua
+git: 'statua' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    t1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[abhishek.agarwal@DM1383 day3_dummy]$ git rm t1.java
+rm 't1.java'
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    t1.java
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    t1.java
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout -- t1.java
+error: pathspec 't1.java' did not match any file(s) known to git
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout --35ba19df3 t1.java
+error: unknown option `35ba19df3'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --no-guess            do not second guess 'git checkout <no-such-branch>'
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout 35ba19df3 -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout a00c8faf2 -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote 
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote add day3
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote add day3 https://github.com/abhishekagarwal0426/day3_final.git
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u add master
+fatal: 'add' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (15/15), 1.33 KiB | 273.00 KiB/s, done.
+Total 15 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/abhishekagarwal0426/day3_final/pull/new/master
+remote: 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'day3'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is up to date with 'day3/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ rm t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is up to date with 'day3/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    t1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[abhishek.agarwal@DM1383 day3_dummy]$ git rm t1.java 
+rm 't1.java'
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is up to date with 'day3/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    t1.java
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git reset head t1.java
+fatal: ambiguous argument 'head': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[abhishek.agarwal@DM1383 day3_dummy]$ git RESET head t1.java
+git: 'RESET' is not a git command. See 'git --help'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git reset HEAD t1.java
+Unstaged changes after reset:
+D	t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote
+day3
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/abhishekagarwal0426/day3_final
+ * [new branch]      main       -> day3/main
+[abhishek.agarwal@DM1383 day3_dummy]$ git rm t1.java
+rm 't1.java'
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch --all
+Fetching day3
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git log FETCH_HEAD
+commit a00c8faf210c9a1ab3c250ab57b6ab2dd72d67f2 (HEAD -> master, day3/master)
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:30:21 2021 +0530
+
+    commit after checking diff bet local and staging
+
+commit 35ba19df3849187583552eb929d40c4f2813e28e
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:16:37 2021 +0530
+
+    modified t1.java added new word
+
+commit 4f2689db4a9337bdce8c36910edf53c553cd4624
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:15:03 2021 +0530
+
+    first modified t1.java file
+
+commit 437fd01dc851c170c178920c79efd99dcff16cc4
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:12:39 2021 +0530
+
+    first commit with all files
+
+commit 6c856586cdf0e85f69edafc646720551c4fb55b7
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:47 2021 +0530
+
+    Create t5.txt
+
+commit 2ae4c57a8c73a7b49854a07014d628648cdf7769
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:30 2021 +0530
+
+    Create t4.txt
+
+commit 892bc8703166dc7fc1d34f6947d2f3b17dad21cf
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:16 2021 +0530
+
+[4]+  Stopped                 git log FETCH_HEAD
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +day3_final:maint
+fatal: couldn't find remote ref day3_final
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +:maint
+From https://github.com/abhishekagarwal0426/day3_final
+ * [new ref]                    -> maint
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +:
+From https://github.com/abhishekagarwal0426/day3_final
+ * branch            HEAD       -> FETCH_HEAD
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +HEAD:
+From https://github.com/abhishekagarwal0426/day3_final
+ * branch            HEAD       -> FETCH_HEAD
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +:HEAD
+From https://github.com/abhishekagarwal0426/day3_final
+ * [new ref]                    -> HEAD
+warning: refname 'HEAD' is ambiguous.
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +*:HEAD
+warning: refname 'HEAD' is ambiguous.
+fatal: invalid refspec '+*:HEAD'
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch day3 +FETCH_HEAD:HEAD
+warning: refname 'HEAD' is ambiguous.
+fatal: couldn't find remote ref FETCH_HEAD
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout a00c8faf210c9a
+D	t1.java
+Note: checking out 'a00c8faf210c9a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at a00c8fa commit after checking diff bet local and staging
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout a00c8faf210c9a --t1.java
+error: unknown option `t1.java'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --no-guess            do not second guess 'git checkout <no-such-branch>'
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout a00c8faf210c9a -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch 437fd01dc85
+warning: refname 'HEAD' is ambiguous.
+fatal: '437fd01dc85' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch 437fd01dc851c170c178920c79efd99dcff16cc4
+warning: refname 'HEAD' is ambiguous.
+fatal: '437fd01dc851c170c178920c79efd99dcff16cc4' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[abhishek.agarwal@DM1383 day3_dummy]$ git log
+warning: refname 'HEAD' is ambiguous.
+commit a00c8faf210c9a1ab3c250ab57b6ab2dd72d67f2 (HEAD, day3/master, master)
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:30:21 2021 +0530
+
+    commit after checking diff bet local and staging
+
+commit 35ba19df3849187583552eb929d40c4f2813e28e
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:16:37 2021 +0530
+
+    modified t1.java added new word
+
+commit 4f2689db4a9337bdce8c36910edf53c553cd4624
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:15:03 2021 +0530
+
+    first modified t1.java file
+
+commit 437fd01dc851c170c178920c79efd99dcff16cc4
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:12:39 2021 +0530
+
+    first commit with all files
+
+commit 6c856586cdf0e85f69edafc646720551c4fb55b7
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:47 2021 +0530
+
+    Create t5.txt
+
+commit 2ae4c57a8c73a7b49854a07014d628648cdf7769
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:30 2021 +0530
+
+    Create t4.txt
+
+commit 892bc8703166dc7fc1d34f6947d2f3b17dad21cf
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:16 2021 +0530
+
+[5]+  Stopped                 git log
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch 437fd01
+warning: refname 'HEAD' is ambiguous.
+fatal: '437fd01' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch --all
+warning: refname 'HEAD' is ambiguous.
+Fetching day3
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout 4f2689db4a9337bdce8c36910edf53c553cd4624
+Previous HEAD position was a00c8fa commit after checking diff bet local and staging
+HEAD is now at 4f2689d first modified t1.java file
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout 4f2689db4a9337bdce8c36910edf53c553cd4624 -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git rm t1.java
+warning: refname 'HEAD' is ambiguous.
+rm 't1.java'
+[abhishek.agarwal@DM1383 day3_dummy]$ git rm t1.java -f
+fatal: pathspec 't1.java' did not match any files
+[abhishek.agarwal@DM1383 day3_dummy]$ git fetch --all
+warning: refname 'HEAD' is ambiguous.
+Fetching day3
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout 35ba19df3849 -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -a -m "final commit of the day with fetch cmd and t1.java file delete then fetch checkout and updated accordingly"
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+[detached HEAD cba24fd] final commit of the day with fetch cmd and t1.java file delete then fetch checkout and updated accordingly
+ Committer: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[abhishek.agarwal@DM1383 day3_dummy]$ git config --global user.name abhishekagarwal0426
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+HEAD detached from 4f2689d
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git add .
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -a -m "final commit of the day with fetch cmd and t1.java file delete then fetch checkout and updated accordingly"
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+HEAD detached from 4f2689d
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout a00c8faf210c
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  cba24fd final commit of the day with fetch cmd and t1.java file delete then fetch checkout and updated accordingly
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> cba24fd
+
+HEAD is now at a00c8fa commit after checking diff bet local and staging
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'day3/master'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+On branch master
+Your branch is up to date with 'day3/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout master
+Already on 'master'
+Your branch is up to date with 'day3/master'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout master
+Already on 'master'
+Your branch is up to date with 'day3/master'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+On branch master
+Your branch is up to date with 'day3/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -a -m "final commit of the day with fetch cmd and t1.java file delete then fetch checkout and updated accordingly"
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+On branch master
+Your branch is up to date with 'day3/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/abhishekagarwal0426/day3_final.git/'
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote
+day3
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote add day3_last https://github.com/abhishekagarwal0426/day3_final.git
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3_last master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3_last'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3_last master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3_last'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ git log
+warning: refname 'HEAD' is ambiguous.
+commit a00c8faf210c9a1ab3c250ab57b6ab2dd72d67f2 (HEAD -> master, day3_last/master, day3/master)
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:30:21 2021 +0530
+
+    commit after checking diff bet local and staging
+
+commit 35ba19df3849187583552eb929d40c4f2813e28e
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:16:37 2021 +0530
+
+    modified t1.java added new word
+
+commit 4f2689db4a9337bdce8c36910edf53c553cd4624
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:15:03 2021 +0530
+
+    first modified t1.java file
+
+commit 437fd01dc851c170c178920c79efd99dcff16cc4
+Author: Abhishek Agarwal <abhishek.agarwal@DM1383.datametica.com>
+Date:   Thu Nov 25 15:12:39 2021 +0530
+
+    first commit with all files
+
+commit 6c856586cdf0e85f69edafc646720551c4fb55b7
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:47 2021 +0530
+
+    Create t5.txt
+
+commit 2ae4c57a8c73a7b49854a07014d628648cdf7769
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:30 2021 +0530
+
+    Create t4.txt
+
+commit 892bc8703166dc7fc1d34f6947d2f3b17dad21cf
+Author: abhishekagarwal0426 <94887204+abhishekagarwal0426@users.noreply.github.com>
+Date:   Thu Nov 25 15:03:16 2021 +0530
+
+[6]+  Stopped                 git log
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+On branch master
+Your branch is up to date with 'day3_last/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git status -f
+error: unknown switch `f'
+usage: git status [<options>] [--] <pathspec>...
+
+    -v, --verbose         be verbose
+    -s, --short           show status concisely
+    -b, --branch          show branch information
+    --show-stash          show stash information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain[=<version>]
+                          machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --ignored[=<mode>]    show ignored files, optional modes: traditional, matching, no. (Default: traditional)
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)
+    --column[=<style>]    list untracked files in columns
+    --no-renames          do not detect renames
+    -M, --find-renames[=<n>]
+                          detect renames, optionally set similarity index
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git status --f
+warning: refname 'HEAD' is ambiguous.
+warning: refname 'HEAD' is ambiguous.
+On branch master
+Your branch is up to date with 'day3_last/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch -m HEAD newbranch
+warning: Renamed a misnamed branch 'HEAD' away
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is up to date with 'day3_last/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3_last master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3_last'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote add day3_main https://github.com/abhishekagarwal0426/day3_final/tree/main
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch
+  maint
+* master
+  newbranch
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3_main newbranch
+fatal: repository 'https://github.com/abhishekagarwal0426/day3_final/tree/main/' not found
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3_final newbranch
+fatal: 'day3_final' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3_last newbranch
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 644 bytes | 644.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/abhishekagarwal0426/day3_final/pull/new/newbranch
+remote: 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ * [new branch]      newbranch -> newbranch
+Branch 'newbranch' set up to track remote branch 'newbranch' from 'day3_last'.
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'day3'.
+Everything up-to-date
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote
+day3
+day3_last
+day3_main
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch
+  maint
+* master
+  newbranch
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 maint
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'maint' on GitHub by visiting:
+remote:      https://github.com/abhishekagarwal0426/day3_final/pull/new/maint
+remote: 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ * [new branch]      maint -> maint
+Branch 'maint' set up to track remote branch 'maint' from 'day3'.
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git push day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/abhishekagarwal0426/day3_final.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[abhishek.agarwal@DM1383 day3_dummy]$ git pull https://github.com/abhishekagarwal0426/day3_final.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/abhishekagarwal0426/day3_final
+ * branch            HEAD       -> FETCH_HEAD
+Updating a00c8fa..dd8e1ac
+Fast-forward
+ t1.java | 3 ---
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t2.java  t3.doc   t3.txt  t5.txt
+..  f2.txt  .gitignore  t1.txt     t2.txt   t3.java  t4.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout a00c8faf210c -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git push day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/abhishekagarwal0426/day3_final.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote
+day3
+day3_last
+day3_main
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ vi t1.java 
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is ahead of 'day3/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   t1.java
+
+[abhishek.agarwal@DM1383 day3_dummy]$ git commit -a -m "fin final commit on main of remote from master of lcoal"
+[master adaadbd] fin final commit on main of remote from master of lcoal
+ Committer: abhishekagarwal0426 <abhishek.agarwal@DM1383.datametica.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ git push day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/abhishekagarwal0426/day3_final.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is ahead of 'day3/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+To https://github.com/abhishekagarwal0426/day3_final.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/abhishekagarwal0426/day3_final.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 master -f
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abhishekagarwal0426/day3_final.git
+ + 510a026...adaadbd master -> master (forced update)
+Branch 'master' set up to track remote branch 'master' from 'day3'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is up to date with 'day3/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 main -f
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/abhishekagarwal0426/day3_final.git'
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 
+day3_last/master      day3/maint            HEAD                  newbranch             
+day3_last/newbranch   day3/master           maint                 ORIG_HEAD             
+day3/main             FETCH_HEAD            master                
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 
+day3_last/master      day3/maint            HEAD                  newbranch             
+day3_last/newbranch   day3/master           maint                 ORIG_HEAD             
+day3/main             FETCH_HEAD            master                
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 day3/main
+day3/main    day3/maint   
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 day3/main
+day3/main    day3/maint   
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 day3/main
+day3/main    day3/maint   
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 day3/main
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/abhishekagarwal0426/day3_final.git
+ * [new branch]      day3/main -> day3/main
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout -- t1.java
+[abhishek.agarwal@DM1383 day3_dummy]$ ls -a
+.   f1.txt  .git        README.md  t1.txt   t2.txt  t3.java  t4.txt
+..  f2.txt  .gitignore  t1.java    t2.java  t3.doc  t3.txt   t5.txt
+[abhishek.agarwal@DM1383 day3_dummy]$ git status
+On branch master
+Your branch is up to date with 'day3/master'.
+
+nothing to commit, working tree clean
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch
+  maint
+* master
+  newbranch
+[abhishek.agarwal@DM1383 day3_dummy]$ git remote remove maint
+fatal: No such remote: 'maint'
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch -d maint 
+Deleted branch maint (was 70e2194).
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch
+* master
+  newbranch
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 main -f
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/abhishekagarwal0426/day3_final.git'
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch main 
+[abhishek.agarwal@DM1383 day3_dummy]$ git push -u day3 main -f
+Username for 'https://github.com': abhishekagarwal0426
+Password for 'https://abhishekagarwal0426@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/abhishekagarwal0426/day3_final.git
+   dd8e1ac..adaadbd  main -> main
+Branch 'main' set up to track remote branch 'main' from 'day3'.
+[abhishek.agarwal@DM1383 day3_dummy]$ git branch
+  main
+* master
+  newbranch
+[abhishek.agarwal@DM1383 day3_dummy]$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'day3/main'.
