@@ -1,0 +1,130 @@
+Summary of 1st Video :-
+
+What is git ->
+      Git is a type of VCS(Version Control System).
+      VCS enables us to record changes to file over time.
+
+Git commit graph ->
+      Tracks changes of file overtime by allowing us to commit the changes.
+      Commit saves the state of a file at a particular instant.
+      the series of commit is known as git commit graph.
+
+3 Areas of git repository ->
+1. Working tree -
+      We can add, delete & modify files.
+2. History -
+      It keeps hidden directory like empty .git file.
+3. Staging Area -
+      Only tracked files are present in staging area.
+      Only the changes in staging area are commited.
+
+Start with a new Repository ->
+git init ->
+      For strating a new repo.
+Adds a new hidden subdirectory i.e. .git file.
+      git config ->
+      To set username and email .
+git staus ->
+      Tells us how things stand in working tree and staging area.
+git add ->
+      By using this command we can stage a file.
+git commit -m "msg" ->
+      Commits everything that is in the staging area.
+Wroking tree clean ->
+      nothing new in the directory (everything in the staging area is already commited).
+git log ->
+      It tells us about the commit graph.
+      most recent commit is at the top.
+      shows hash value, author , timestamp  ofgit  each commit.
+      -p shows us what actual changes are made with each commit.
+      Git performs a SHA-1 hash of every commit that is made.
+      Every commit has a unique hash value.
+git diff ->
+      To see the difference between tracked files in working tree and staging area.
+      Gives information about teh files that are being tracked(staged).
+      --staged shows differnt between staging area and most recent commit.
+git rm ->
+      To remove a file from repo.
+      Does 2 things at once - removes file from repo and also stages the removal.
+git checkout ->
+      To switch branches and restore changes made in the working tree.
+.gitignore ->
+      The files that are not required to track can be achieved by using this command.
+      
+===================================================================================================
+      
+Summary of 2nd Video :-    
+
+Introduction to Git: Branching and Merging 
+             
+What is a branch for?
+      Branch allows us to work on different versions of the same files in parallel.
+      Branches result in a separation of versions of the same files.
+                   
+How is a branch implemented? 
+      Every commit has a 40 hexadecimal sha-1 hash.
+      A branch is a  pointer to a sha-1 hash.
+
+HEAD -> 
+      is a pointer that normally points to a branch not to the commit.
+      Therefore called as "Symbolic pointer" (checked out )
+                        
+git log --all --decorate --oneline --graph -> 
+alias graph ->
+      git log --all --decorate --oneline --graph    
+      here alias graph is command alias and now by stating graph all the commits in the file are shown
+                          
+                          
+Create new branch ->
+      git branch <branch name>
+      git branch : shows  all the branches in the directory. In this command "*" points to the head branch.
+                        
+Checkout and work on branches -> 
+      git checkout <branch name> : the HEAD pointer will pointer will point to the given branch.
+                               
+Merge ->
+1) Fast-Forward merge :- 
+
+git merge <branch name> : if there is a direct path from one branch to another branch,GIT performs a fast-forward merge.
+                                
+git diff master .. SDn : shows what will change when we merge SDN into master 
+cat filename : shows the content of the file 
+                           
+Deleting  the branches ->
+        git branch --merged = this will show that which branches in our directory is merged.
+        git branch -d <branch name> = this will delete the given branch when we haven't merged a branch with another branch and we try to delete it with above command , GIT will tell us
+        that it isn't merged fully but git will allow us to decide if we want then we can,use, git branch -D <branch name>
+                                           
+2) 3-way merge :-
+                                                   
+in a 3way merge, there is no direct path between the branches so to merge  them together into a new commit  called as "merge commit"
+to make this merge commit git will look  at three commits - a) base commit (where the two branches started from.)
+                                                            b) last commit of each branch    git merge <branch name>
+                                                      
+Merge Conflicts :-
+         A merge conflict occurs when we try to merge branches that have changed the same lines in the same files.
+         To create a new branch and directly start working on it 
+git checkout -b <branch name>
+git diff : shows our modification 
+git commit -a -m "msg" : to add & commit at the same time 
+         
+If there is a conflict and we dont want to resolve it 
+git merge --abort
+
+To merge branches with conflicts call
+git merge <branch name> : then this will show that there are conflicts to resolve them we have to edit our file where there are conflicts.
+Deleting what is not required & saving what we require.
+                                                                 
+Now add our file : git add <filename>
+git status
+git commit 
+git branch stage : creates a stage branch 
+git checkout stage : checks our new branch                                                                        
+git stash list : we get to see our stashes                                                                        
+git stash list -p : observe edits that occured with each stash point                                                                        
+git stash apply : will re-apply most recent stash                                                                        
+git stash apply <stash label> : to apply specific stash                                                                        
+here, stash label can be obtained by stash list.                                                                        
+git stash save "msg" : add massage to the stash.                                                                       
+                                                                         
+                                                    
